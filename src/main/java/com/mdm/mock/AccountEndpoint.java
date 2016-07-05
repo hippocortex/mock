@@ -7,6 +7,7 @@ import org.jdom2.Namespace;
 import org.jdom2.filter.Filters;
 import org.jdom2.xpath.XPathExpression;
 import org.jdom2.xpath.XPathFactory;
+import org.springframework.util.StringUtils;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -47,16 +48,16 @@ public class AccountEndpoint {
 		
 		
 		//TODO generer le code compte SCPxxxxxx
-		String location = accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation()!=null?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation():"SCP"+nextSessionId(6); 
-		String integrationID=accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId()!=null?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId():nextSessionId(25);
+		String location = !StringUtils.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation())?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation():"SCP"+nextSessionId(6); 
+		String integrationID=!StringUtils.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId())?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId():nextSessionId(25);
 		
 		
 		Account outAccount = new Account();
 		outAccount.setIntegrationId(integrationID);
 		outAccount.setLocation(location);
-		
-        
-        //MIGAG - CHM - Add the booking code from MDM
+		swiOrg.addAccount(outAccount);
+		output.setListOfSwiOrganizationB2BOutIOV5(swiOrg);
+		//MIGAG - CHM - Add the booking code from MDM
        // accountParam.BookingCode__c = calloutResponse.ListOfSwiOrganizationB2BOutIOV5.Account[0].ACCORB2BBookingCode;
 		
 		return output;
