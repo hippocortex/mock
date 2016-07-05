@@ -1,14 +1,22 @@
 package com.mdm.mock;
 
-import org.jdom2.Element;
 import org.jdom2.Namespace;
 import org.jdom2.filter.Filters;
 import org.jdom2.xpath.XPathExpression;
 import org.jdom2.xpath.XPathFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
+import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
+import com.accor.asa.interfaces.domain.account.siebel.CustomUI.CreateOrganizationB2BV5Input;
+import com.accor.asa.interfaces.domain.account.siebel.CustomUI.CreateOrganizationB2BV5Output;
+/**
+ * http://docs.spring.io/spring-ws/docs/2.2.0.RELEASE/reference/htmlsingle/#d4e112
+ * @author sbarberye
+ *
+ */
 @Endpoint
 public class AccountEndpoint {
 	private static final String NAMESPACE_URI = "http://siebel.com/CustomUI";
@@ -22,10 +30,13 @@ public class AccountEndpoint {
     }
 
 	@PayloadRoot(namespace=NAMESPACE_URI,localPart = "createOrganizationB2BV5_Input")
-	public void handleAccountRequest(@RequestPayload Element accountRequest){
-		String name = accountNameExpression.evaluateFirst(accountRequest).getText() ;
+	public @ResponsePayload CreateOrganizationB2BV5Output handleAccountRequest(@RequestPayload CreateOrganizationB2BV5Input accountRequest){
+		//String name = accountNameExpression.evaluateFirst(accountRequest).getText() ;
+		CreateOrganizationB2BV5Output output= new CreateOrganizationB2BV5Output();
+		System.out.print("ok : "+accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getACCORB2BLegalName());
 		
-		System.out.print("ok : "+name);
+		BeanUtils.copyProperties(accountRequest, output);
+		return output;
 			
 	}
 }
