@@ -21,7 +21,6 @@ import com.accor.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2B
 import com.accor.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Output;
 import com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.Account;
 import com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.ListOfSwiOrganizationB2BOutIOV5;
-import com.accor.mock.JaxbXmlConverterTest;
 import com.sb.tools.JaxbXmlConverter;
 import com.sb.tools.StringTool;
 
