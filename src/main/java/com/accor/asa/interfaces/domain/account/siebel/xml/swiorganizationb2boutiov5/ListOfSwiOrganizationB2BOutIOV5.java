@@ -70,7 +70,6 @@ public class ListOfSwiOrganizationB2BOutIOV5 {
     public void addAccount(Account added){
     	 if (account == null) {
              account = new ArrayList<Account>();
-             account.add(new Account());
          }
     	account.add(added);
     }
