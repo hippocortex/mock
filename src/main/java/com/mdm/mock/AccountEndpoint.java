@@ -1,7 +1,6 @@
 package com.mdm.mock;
 
 import java.io.InputStream;
-import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +24,6 @@ import com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.
 import com.accor.mock.JaxbXmlConverterTest;
 import com.sb.tools.JaxbXmlConverter;
 import com.sb.tools.StringTool;
-import com.sb.tools.StringUtilities;
 
 /**
  * http://docs.spring.io/spring-ws/docs/2.2.0.RELEASE/reference/htmlsingle/#
@@ -103,7 +101,7 @@ public class AccountEndpoint {
 	
 	
 	private Object getPayload(){
-		final InputStream resourceAsStream = JaxbXmlConverterTest.class.getResourceAsStream( "updateAccount.xml" );
+		final InputStream resourceAsStream = AccountEndpoint.class.getResourceAsStream( "updateAccount.xml" );
 		JaxbXmlConverter<UpdateOrganizationB2BV5Output> converter = new JaxbXmlConverter<UpdateOrganizationB2BV5Output>();
 		
 		List<Class> classesHead = new ArrayList<Class>() ;
