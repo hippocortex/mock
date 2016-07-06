@@ -69,8 +69,8 @@ public class AccountEndpoint {
 	
 	
 	
-	@PayloadRoot(namespace=NAMESPACE_URI,localPart = "createOrganizationB2BV5_Input")
-	public @ResponsePayload UpdateOrganizationB2BV5Output handleAccountRequest(@RequestPayload UpdateOrganizationB2BV5Input accountRequest){
+	@PayloadRoot(namespace=NAMESPACE_URI,localPart = "updateOrganizationB2BV5_Input")
+	public @ResponsePayload UpdateOrganizationB2BV5Output handleAccountUpdate(@RequestPayload UpdateOrganizationB2BV5Input accountRequest){
 		//String name = accountNameExpression.evaluateFirst(accountRequest).getText() ;
 		UpdateOrganizationB2BV5Output output= new UpdateOrganizationB2BV5Output();
 		ListOfSwiOrganizationB2BOutIOV5 swiOrg = new ListOfSwiOrganizationB2BOutIOV5();
