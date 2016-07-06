@@ -85,7 +85,7 @@ public class AccountEndpoint {
 		String integrationID=!StringUtils.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId())?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId():StringTool.randomString(25);
 		
 		swiOrg =  ((UpdateOrganizationB2BV5Output) getPayload()).getListOfSwiOrganizationB2BOutIOV5();
-		Account outAccount = ((UpdateOrganizationB2BV5Output) getPayload()).getListOfSwiOrganizationB2BOutIOV5().getAccount().get(0);
+		Account outAccount = swiOrg.getAccount().get(0);
 		outAccount.setIntegrationId(integrationID);
 		outAccount.setLocation(location);
 		swiOrg.addAccount(outAccount);
@@ -100,13 +100,15 @@ public class AccountEndpoint {
 	
 	
 	private Object getPayload(){
+		ClassLoader cl = AccountEndpoint.class.getClassLoader();
+		InputStream inputStream = cl.getResourceAsStream("updateAccount.xml");
 		final InputStream resourceAsStream = AccountEndpoint.class.getResourceAsStream( "updateAccount.xml" );
 		JaxbXmlConverter<UpdateOrganizationB2BV5Output> converter = new JaxbXmlConverter<UpdateOrganizationB2BV5Output>();
 		
 		List<Class> classesHead = new ArrayList<Class>() ;
 		classesHead.add(UpdateOrganizationB2BV5Output.class);
 		converter.registerClasses(classesHead);
-		return  converter.unmarshall(resourceAsStream);
+		return  converter.unmarshall(inputStream);
 	}
 	
 }
