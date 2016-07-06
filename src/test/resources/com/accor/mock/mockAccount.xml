@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<updateOrganizationB2BV5_Input xmlns="http://siebel.com/CustomUI"
+	xmlns:ns2="http://www.siebel.com/xml/SwiOrganizationB2BIOV5" xmlns:ns3="http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5">
+	<AccountOperation>SETACCNT</AccountOperation>
+	<RealtimePubSub>false</RealtimePubSub>
+	<ListOfSwiOrganizationB2BIO	ExternalSystemId="50" xmlns="http://www.siebel.com/xml/SwiOrganizationB2BIOV5">
+		<Account Operation="Upsert">
+			<IntegrationId>113284146</IntegrationId>
+			<Name>TOUR HOUSE-TH 16</Name>
+			<ACCORB2BLegalName>TOUR HOUSE VIAGENS E TURISMO LTDA.
+			</ACCORB2BLegalName>
+			<AccountStatus>7</AccountStatus>
+			<Type>IA</Type>
+			<ACCORB2BCreatedDate>2016-07-05T10:06:00Z</ACCORB2BCreatedDate>
+			<ACCORB2BCreatedByLogin>RASIA02</ACCORB2BCreatedByLogin>
+			<ACCORB2BUpdated>2016-07-05T10:06:00Z</ACCORB2BUpdated>
+			<ACCORB2BUpdatedBy>RASIA02</ACCORB2BUpdatedBy>
+			<ACCORB2BPhonePrefix>55</ACCORB2BPhonePrefix>
+			<MainPhoneNumber>3156-7777</MainPhoneNumber>
+			<ACCORB2BFaxPrefix>55</ACCORB2BFaxPrefix>
+			<MainFaxNumber>3156-7770</MainFaxNumber>
+			<HomePage />
+			<ACCORB2BEmail />
+			<ACCORB2BAccountResponsableLogin>RASIA02
+			</ACCORB2BAccountResponsableLogin>
+			<ACCORB2BResponsableNom>YUTTHASETPONG (NONG)</ACCORB2BResponsableNom>
+			<ACCORB2BResponsablePrenom>Yupa</ACCORB2BResponsablePrenom>
+			<ParentAccountIntegrationId />
+			<ACCORB2BMasterAccountIntegrationId>113284146
+			</ACCORB2BMasterAccountIntegrationId>
+			<ACCORB2BBusinessType>1</ACCORB2BBusinessType>
+			<ACCORB2BKeyAccountClassification>12
+			</ACCORB2BKeyAccountClassification>
+			<ACCORB2BInactiveFlag>N</ACCORB2BInactiveFlag>
+			<ACCORB2BSystematicTracking>N</ACCORB2BSystematicTracking>
+			<DUNSNumber />
+			<ACCORB2BCapital />
+			<ACCORB2BCASociete />
+			<ACCORB2BRegistrationNumber />
+			<ACCORB2BTypeSociete />
+			<Description />
+			<ACCORDescription2 />
+			<ACCORDescription3 />
+			<ACCORB2BCreditManagement>gdm.credit.management@accor.com
+			</ACCORB2BCreditManagement>
+			<ACCORDNBNationalID />
+			<ACCORDNBIDType />
+			<ACCORB2BTerritoryCode>RAP</ACCORB2BTerritoryCode>
+			<ListOfCifAccountReference>
+				<CifAccountReference>
+					<ExternalId1>489170</ExternalId1>
+					<SystemNumber>50</SystemNumber>
+				</CifAccountReference>
+			</ListOfCifAccountReference>
+			<ListOfDnbAccount>
+				<DnbAccount />
+			</ListOfDnbAccount>
+			<ListOfAccount_BusinessAddress>
+				<Account_BusinessAddress IsPrimaryMVG="Y"
+					Operation="Upsert">
+					<AddressIntegrationId>455558016</AddressIntegrationId>
+					<StreetAddress>RUA DA CONSOLACAO NO. 247</StreetAddress>
+					<StreetAddress2>9 ANDAR-CENTRO</StreetAddress2>
+					<ApartmentNumber />
+					<ACCORAddressLine4 />
+					<City>SAO PAULO</City>
+					<PostalCode>01301-903</PostalCode>
+					<Country>BR</Country>
+					<State>BRSP</State>
+					<ACCORNPAIFlag>N</ACCORNPAIFlag>
+					<ACCORNPAIDate />
+					<ACCOROptOutFlag>N</ACCOROptOutFlag>
+					<ACCOROptOutDate />
+					<ListOfACCORAccountAddressUsageType>
+						<ACCORAccountAddressUsageType>
+							<ACCORAccountAddressUsage>Postal</ACCORAccountAddressUsage>
+						</ACCORAccountAddressUsageType>
+					</ListOfACCORAccountAddressUsageType>
+				</Account_BusinessAddress>
+			</ListOfAccount_BusinessAddress>
+			<ListOfAccorAccountSegment>
+				<AccorAccountSegment>
+					<Name>EUR</Name>
+					<Type2>18</Type2>
+				</AccorAccountSegment>
+			</ListOfAccorAccountSegment>
+			<ListOfAccorDistribution>
+				<AccorDistribution Operation="Upsert">
+					<ACCORB2BGDSCode>1</ACCORB2BGDSCode>
+					<ACCORB2BGDSIATA>Y</ACCORB2BGDSIATA>
+					<ACCORB2BPCCCode>BUE2C38AC**, BUE2C32P2**,BUE2C3P3**,BUE2C32P3**
+					</ACCORB2BPCCCode>
+					<Type2>GDS</Type2>
+				</AccorDistribution>
+				<AccorDistribution Operation="Upsert">
+					<ACCORB2BGDSCode>3</ACCORB2BGDSCode>
+					<ACCORB2BGDSIATA>Y</ACCORB2BGDSIATA>
+					<ACCORB2BPCCCode>MY7G</ACCORB2BPCCCode>
+					<Type2>GDS</Type2>
+				</AccorDistribution>
+			</ListOfAccorDistribution>
+			<ListOfAccorB2bAccountResaHabitsDistribMode />
+			<ListOfAccorB2bAccountResaHabitsResaMode />
+		</Account>
+	</ListOfSwiOrganizationB2BIO>
+</updateOrganizationB2BV5_Input>

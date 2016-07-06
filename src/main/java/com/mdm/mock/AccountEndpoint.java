@@ -1,7 +1,10 @@
 package com.mdm.mock;
 
+import java.io.InputStream;
 import java.math.BigInteger;
 import java.security.SecureRandom;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.jdom2.Namespace;
 import org.jdom2.filter.Filters;
@@ -13,13 +16,16 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import com.accor.asa.interfaces.domain.account.siebel.CustomUI.CreateOrganizationB2BV5Input;
-import com.accor.asa.interfaces.domain.account.siebel.CustomUI.CreateOrganizationB2BV5Output;
-import com.accor.asa.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Input;
-import com.accor.asa.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Output;
-import com.accor.asa.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.Account;
-import com.accor.asa.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.ListOfSwiOrganizationB2BOutIOV5;
+import com.accor.interfaces.domain.account.siebel.CustomUI.CreateOrganizationB2BV5Input;
+import com.accor.interfaces.domain.account.siebel.CustomUI.CreateOrganizationB2BV5Output;
+import com.accor.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Input;
+import com.accor.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Output;
+import com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.Account;
+import com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.ListOfSwiOrganizationB2BOutIOV5;
+import com.accor.mock.JaxbXmlConverterTest;
+import com.sb.tools.JaxbXmlConverter;
 import com.sb.tools.StringTool;
+import com.sb.tools.StringUtilities;
 
 /**
  * http://docs.spring.io/spring-ws/docs/2.2.0.RELEASE/reference/htmlsingle/#
@@ -73,7 +79,7 @@ public class AccountEndpoint {
 	public @ResponsePayload UpdateOrganizationB2BV5Output handleAccountUpdate(@RequestPayload UpdateOrganizationB2BV5Input accountRequest){
 		//String name = accountNameExpression.evaluateFirst(accountRequest).getText() ;
 		UpdateOrganizationB2BV5Output output= new UpdateOrganizationB2BV5Output();
-		ListOfSwiOrganizationB2BOutIOV5 swiOrg = new ListOfSwiOrganizationB2BOutIOV5();
+		ListOfSwiOrganizationB2BOutIOV5 swiOrg ;
 		System.out.print("ok : "+accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getACCORB2BLegalName());
 		
 		
@@ -81,8 +87,8 @@ public class AccountEndpoint {
 		String location = !StringUtils.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation())?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation():"SCP"+StringTool.randomString(6); 
 		String integrationID=!StringUtils.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId())?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId():StringTool.randomString(25);
 		
-		
-		Account outAccount = new Account();
+		swiOrg =  ((UpdateOrganizationB2BV5Output) getPayload()).getListOfSwiOrganizationB2BOutIOV5();
+		Account outAccount = ((UpdateOrganizationB2BV5Output) getPayload()).getListOfSwiOrganizationB2BOutIOV5().getAccount().get(0);
 		outAccount.setIntegrationId(integrationID);
 		outAccount.setLocation(location);
 		swiOrg.addAccount(outAccount);
@@ -92,6 +98,18 @@ public class AccountEndpoint {
 		
 		return output;
 			
+	}
+	
+	
+	
+	private Object getPayload(){
+		final InputStream resourceAsStream = JaxbXmlConverterTest.class.getResourceAsStream( "updateAccount.xml" );
+		JaxbXmlConverter<UpdateOrganizationB2BV5Output> converter = new JaxbXmlConverter<UpdateOrganizationB2BV5Output>();
+		
+		List<Class> classesHead = new ArrayList<Class>() ;
+		classesHead.add(UpdateOrganizationB2BV5Output.class);
+		converter.registerClasses(classesHead);
+		return  converter.unmarshall(resourceAsStream);
 	}
 	
 }
