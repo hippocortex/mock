@@ -101,13 +101,14 @@ public class AccountEndpoint {
 	
 	private Object getPayload(){
 		ClassLoader cl = AccountEndpoint.class.getClassLoader();
-		InputStream inputStream = AccountEndpoint.class.getResourceAsStream("/com/mdm/mock/updateAccount2.xml");
+		InputStream inputStream = this.getClass().getResourceAsStream("/com/mdm/mock/updateAccount.xml");
 		//final InputStream resourceAsStream = AccountEndpoint.class.getResourceAsStream( "updateAccount.xml" );
 		JaxbXmlConverter<UpdateOrganizationB2BV5Output> converter = new JaxbXmlConverter<UpdateOrganizationB2BV5Output>();
 		
 		List<Class> classesHead = new ArrayList<Class>() ;
 		classesHead.add(UpdateOrganizationB2BV5Output.class);
 		converter.registerClasses(classesHead);
+		converter.registerPrefix(NAMESPACE_URI, "cus");
 		return  converter.unmarshall(inputStream);
 	}
 	

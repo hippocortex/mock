@@ -54,8 +54,13 @@ public class JaxbXmlConverterTest {
 		Assert.assertEquals("113284146", unmarshall.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId());
 	}
 	
+	/**
+	 * test sur un fichier au format specifique salesforce sur les namespace 
+	 * @throws JAXBException
+	 * @throws XMLStreamException
+	 */
 	@Test
-	public void testUnmarshallInputStreamUpdateOut() throws JAXBException, XMLStreamException {
+	public void testUnmarshallInputStreamUpdateOutSfa() throws JAXBException, XMLStreamException {
 		final InputStream resourceAsStream = JaxbXmlConverterTest.class.getResourceAsStream( "/com/accor/mock/updateAccount.xml" );
 		JaxbXmlConverter<UpdateOrganizationB2BV5Output> converter = new JaxbXmlConverter<UpdateOrganizationB2BV5Output>();
 //		XMLInputFactory xif = XMLInputFactory.newFactory();
@@ -74,17 +79,21 @@ public class JaxbXmlConverterTest {
 		
 		List<Class> classesHead = new ArrayList<Class>() ;
 		classesHead.add(UpdateOrganizationB2BV5Output.class);
+//		classesHead.add(com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.ListOfSwiOrganizationB2BOutIOV5.class);
+//		classesHead.add(com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.Account.class);
 		converter.registerClasses(classesHead);
-//		converter.registerClass(Account.class);
-//		converter.registerPrefix("http://siebel.com/CustomUI","");
-//		converter.registerPrefix("http://www.siebel.com/xml/SwiOrganizationB2BIOV5", "ns2");
-//		converter.registerPrefix("http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5","ns3");
+		converter.registerPrefix("http://siebel.com/CustomUI","cus");
+//		converter.registerPrefix("http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5","ns1");
+
 		final String xml = StringUtilities
 				.getStringFromResourceFile(JaxbXmlConverterTest.class
-						.getResourceAsStream("com/accor/mock/updateAccount2.xml"));
+						.getResourceAsStream("/com/accor/mock/updateAccount2.xml"));
 		
 		UpdateOrganizationB2BV5Output unmarshall2 = converter.unmarshall(xml);
 		UpdateOrganizationB2BV5Output unmarshall = converter.unmarshall(resourceAsStream);
+		
+		String xmlmarshall  = converter.marshall(unmarshall);
+		
 		Assert.assertEquals("701976257", unmarshall.getListOfSwiOrganizationB2BOutIOV5().getAccount().get(0).getIntegrationId());
 	}
 
