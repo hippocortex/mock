@@ -101,8 +101,8 @@ public class AccountEndpoint {
 	
 	private Object getPayload(){
 		ClassLoader cl = AccountEndpoint.class.getClassLoader();
-		InputStream inputStream = cl.getResourceAsStream("updateAccount.xml");
-		final InputStream resourceAsStream = AccountEndpoint.class.getResourceAsStream( "updateAccount.xml" );
+		InputStream inputStream = AccountEndpoint.class.getResourceAsStream("/com/mdm/mock/updateAccount2.xml");
+		//final InputStream resourceAsStream = AccountEndpoint.class.getResourceAsStream( "updateAccount.xml" );
 		JaxbXmlConverter<UpdateOrganizationB2BV5Output> converter = new JaxbXmlConverter<UpdateOrganizationB2BV5Output>();
 		
 		List<Class> classesHead = new ArrayList<Class>() ;

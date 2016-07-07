@@ -81,7 +81,7 @@ public class JaxbXmlConverterTest {
 //		converter.registerPrefix("http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5","ns3");
 		final String xml = StringUtilities
 				.getStringFromResourceFile(JaxbXmlConverterTest.class
-						.getResourceAsStream("/com/accor/mock/updateAccount.xml"));
+						.getResourceAsStream("com/accor/mock/updateAccount2.xml"));
 		
 		UpdateOrganizationB2BV5Output unmarshall2 = converter.unmarshall(xml);
 		UpdateOrganizationB2BV5Output unmarshall = converter.unmarshall(resourceAsStream);
