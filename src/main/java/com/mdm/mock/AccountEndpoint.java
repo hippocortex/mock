@@ -72,12 +72,12 @@ public class AccountEndpoint {
 	
 	
 	
-	@PayloadRoot(namespace=NAMESPACE_URI,localPart = "updateOrganizationB2BV5_Input")
+	@PayloadRoot(   namespace=NAMESPACE_URI,localPart = "updateOrganizationB2BV5_Input")
 	public @ResponsePayload UpdateOrganizationB2BV5Output handleAccountUpdate(@RequestPayload UpdateOrganizationB2BV5Input accountRequest){
 		//String name = accountNameExpression.evaluateFirst(accountRequest).getText() ;
 		UpdateOrganizationB2BV5Output output= new UpdateOrganizationB2BV5Output();
 		ListOfSwiOrganizationB2BOutIOV5 swiOrg ;
-		System.out.print("ok : "+accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getACCORB2BLegalName());
+		//System.out.print("ok : "+accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getACCORB2BLegalName());
 		
 		
 		//TODO generer le code compte SCPxxxxxx
