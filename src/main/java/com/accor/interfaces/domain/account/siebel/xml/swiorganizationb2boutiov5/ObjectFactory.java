@@ -237,7 +237,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link ListOfSwiOrganizationB2BOutIOV5 }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5", name = "ListOfSwiOrganizationB2BOutIOV5")
+    @XmlElementDecl(namespace = "http://siebel.com/CustomUI", name = "ListOfSwiOrganizationB2BOutIOV5")
     public JAXBElement<ListOfSwiOrganizationB2BOutIOV5> createListOfSwiOrganizationB2BOutIOV5(ListOfSwiOrganizationB2BOutIOV5 value) {
         return new JAXBElement<ListOfSwiOrganizationB2BOutIOV5>(_ListOfSwiOrganizationB2BOutIOV5_QNAME, ListOfSwiOrganizationB2BOutIOV5 .class, null, value);
     }

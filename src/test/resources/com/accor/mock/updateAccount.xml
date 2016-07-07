@@ -1,186 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ns0:updateOrganizationB2BV5_Output
-	xmlns:ns0="http://siebel.com/CustomUI">
-	<ns0:_sblesc_lstValue_grt />
-	<ns0:Error_spcCode />
-	<ns0:Error_spcMessage />
-	<ns0:ErrorCode>0</ns0:ErrorCode>
-	<ns0:ErrorField />
-	<ns0:ErrorMsg>OK</ns0:ErrorMsg>
-	<ns0:Object_spcId />
-	<ns0:Process_spcInstance_spcId>2-FZ05O9N
-	</ns0:Process_spcInstance_spcId>
-	<ns0:RealtimePubSub>false</ns0:RealtimePubSub>
-	<ns0:Siebel_spcOperation_spcObject_spcId />
-	<ns1:ListOfSwiOrganizationB2BOutIOV5
-		xmlns:ns1="http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5">
-		<ns1:Account>
-			<ns1:Id>2-FYYWTGG</ns1:Id>
-			<ns1:RowId>2-FYYWTGG</ns1:RowId>
-			<ns1:PartyTypeCode>Organization</ns1:PartyTypeCode>
-			<ns1:PartyUId>2-FYYWTGG</ns1:PartyUId>
-			<ns1:LastUpdateSDQ>07/06/2016 15:41:28</ns1:LastUpdateSDQ>
-			<ns1:UpdatedBy>1-DJ7C1J</ns1:UpdatedBy>
-			<ns1:Updated>07/06/2016 15:41:28</ns1:Updated>
-			<ns1:Location>SCP589397</ns1:Location>
-			<ns1:IntegrationId>701976257</ns1:IntegrationId>
-			<ns1:Name>SILCO TEC UMWELTSCHUTZSYSTEME GMBH</ns1:Name>
-			<ns1:ACCORB2BLegalName>SILCO TEC UMWELTSCHUTZSYSTEME GMBH
-			</ns1:ACCORB2BLegalName>
-			<ns1:AccountStatus>0</ns1:AccountStatus>
-			<ns1:ACCORB2BSFAAccountStatus>CLIENT</ns1:ACCORB2BSFAAccountStatus>
-			<ns1:Status />
-			<ns1:Type>SC</ns1:Type>
-			<ns1:ACCORB2BCreatedDate>07/06/2016 17:31:40
-			</ns1:ACCORB2BCreatedDate>
-			<ns1:AccountCreatedBy>APP_WS_51</ns1:AccountCreatedBy>
-			<ns1:ACCORB2BCreatedByLogin>DASSAN</ns1:ACCORB2BCreatedByLogin>
-			<ns1:ACCORB2BUpdated>07/06/2016 17:41:27</ns1:ACCORB2BUpdated>
-			<ns1:AccountUpdatedBy>APP_WS_50</ns1:AccountUpdatedBy>
-			<ns1:ACCORB2BUpdatedBy>DASSAN</ns1:ACCORB2BUpdatedBy>
-			<ns1:ACCORB2BPhonePrefix>49</ns1:ACCORB2BPhonePrefix>
-			<ns1:ACCORB2BClientType>COMP</ns1:ACCORB2BClientType>
-			<ns1:MainPhoneNumber>9071 58 379 0</ns1:MainPhoneNumber>
-			<ns1:ACCORB2BFaxPrefix />
-			<ns1:MainFaxNumber />
-			<ns1:HomePage />
-			<ns1:ACCORB2BEmail />
-			<ns1:ACCORB2BAccountResponsableLogin>DASSAN
-			</ns1:ACCORB2BAccountResponsableLogin>
-			<ns1:ACCORB2BResponsableNom>ASSENZA</ns1:ACCORB2BResponsableNom>
-			<ns1:ACCORB2BResponsablePrenom>Davide
-			</ns1:ACCORB2BResponsablePrenom>
-			<ns1:ParentAccountIntegrationId />
-			<ns1:ACCORB2BParentAccountResponsableLogin />
-			<ns1:ACCORB2BMasterAccountIntegrationId>701976257
-			</ns1:ACCORB2BMasterAccountIntegrationId>
-			<ns1:ACCORB2BBusinessType>1</ns1:ACCORB2BBusinessType>
-			<ns1:ACCORB2BKeyAccountClassification>12
-			</ns1:ACCORB2BKeyAccountClassification>
-			<ns1:ACCORB2BInactiveFlag>N</ns1:ACCORB2BInactiveFlag>
-			<ns1:ACCORB2BSystematicTracking>N</ns1:ACCORB2BSystematicTracking>
-			<ns1:DUNSNumber />
-			<ns1:ACCORB2BCapital />
-			<ns1:ACCORB2BCASociete />
-			<ns1:ACCORB2BBusinessLine>J</ns1:ACCORB2BBusinessLine>
-			<ns1:ACCORB2BBusinessSector>96</ns1:ACCORB2BBusinessSector>
-			<ns1:ACCORB2BMainAccorDivision>CORPORATE
-			</ns1:ACCORB2BMainAccorDivision>
-			<ns1:ACCORB2BRegistrationNumber />
-			<ns1:ACCORB2BTypeSociete />
-			<ns1:Description />
-			<ns1:ACCORDescription2 />
-			<ns1:ACCORDescription3 />
-			<ns1:ACCORB2BCreditManagement>gdm.credit.management@accor.com
-			</ns1:ACCORB2BCreditManagement>
-			<ns1:ACCORB2BLastUpdatedGrappe>07/06/2016 15:41:28
-			</ns1:ACCORB2BLastUpdatedGrappe>
-			<ns1:ACCORB2BLastUpdatedGrappeSystemId>50
-			</ns1:ACCORB2BLastUpdatedGrappeSystemId>
-			<ns1:ACCORContratNumber />
-			<ns1:ACCORDNBDevise />
-			<ns1:ACCORDNBNationalID />
-			<ns1:ACCORDNBIDType />
-			<ns1:ACCORDNBOutBusiness />
-			<ns1:ACCORDNBTotalEmployees />
-			<ns1:ACCORB2BAccountCategory>SC</ns1:ACCORB2BAccountCategory>
-			<ns1:ACCORB2BBookingCodeSource />
-			<ns1:ACCORB2BBookingCode />
-			<ns1:ACCORB2BRecordType>Direct</ns1:ACCORB2BRecordType>
-			<ns1:ACCORB2BNetPriceRemunerationFlag>N
-			</ns1:ACCORB2BNetPriceRemunerationFlag>
-			<ns1:ACCORB2BReservationMode />
-			<ns1:ACCORB2BTerritoryCode>D2S</ns1:ACCORB2BTerritoryCode>
-			<ns1:ACCORB2BAgencyUpdated />
-			<ns1:ACCORB2BAgencyCreated />
-			<ns1:ACCORB2BAccountStatus>0</ns1:ACCORB2BAccountStatus>
-			<ns1:ACCORB2BHomeAgencyCode />
-			<ns1:ACCORB2BPreviousAgencyCode />
-			<ns1:ACCORB2BTransactionCode>A</ns1:ACCORB2BTransactionCode>
-			<ns1:ACCORB2BToBeDeleted>N</ns1:ACCORB2BToBeDeleted>
-			<ns1:ACCORB2BDeletionReason>N/A</ns1:ACCORB2BDeletionReason>
-			<ns1:ACCORB2BNetworkId />
-			<ns1:ACCORB2BNetworkTARSCode />
-			<ns1:ACCORB2BNetworkName />
-			<ns1:ACCORB2BExternalAgencyCode />
-			<ns1:ACCORB2BSuspiciousAgencyStatus />
-			<ns1:ACCORB2BConsortiumName />
-			<ns1:ACCORB2BSuspiciousAgencyComments />
-			<ns1:ACCORB2BSuspiciousAgencyStatusLastUpdate />
-			<ns1:ACCORB2BNoshowPercentage />
-			<ns1:ACCORB2BCancelledRevenue />
-			<ns1:ACCORB2BTARSTransferred>0</ns1:ACCORB2BTARSTransferred>
-			<ns1:ACCORB2BAccessCode1 />
-			<ns1:ACCORB2BAccessCode2 />
-			<ns1:ACCORB2BExpirationDate />
-			<ns1:ACCORB2BSubsidiaryAccountClassification />
-			<ns1:ACCORB2BIndividualGenericAccount>N
-			</ns1:ACCORB2BIndividualGenericAccount>
-			<ns1:ACCORB2BLeadSource>Phone Call</ns1:ACCORB2BLeadSource>
-			<ns1:ACCORB2BCreatedByDelphi />
-			<ns1:ACCORB2BUpdatedByDelphi />
-			<ns1:ListOfCifAccountReference>
-				<ns1:CifAccountReference>
-					<ns1:ExternalId1>2-FYYWTGG</ns1:ExternalId1>
-					<ns1:SystemNumber>50</ns1:SystemNumber>
-				</ns1:CifAccountReference>
-				<ns1:CifAccountReference>
-					<ns1:ExternalId1>489473</ns1:ExternalId1>
-					<ns1:SystemNumber>50</ns1:SystemNumber>
-				</ns1:CifAccountReference>
-				<ns1:CifAccountReference>
-					<ns1:ExternalId1>001b000003QsMDaAAN</ns1:ExternalId1>
-					<ns1:SystemNumber>51</ns1:SystemNumber>
-				</ns1:CifAccountReference>
-				<ns1:CifAccountReference>
-					<ns1:ExternalId1>2-FYYWTGG</ns1:ExternalId1>
-					<ns1:SystemNumber>51</ns1:SystemNumber>
-				</ns1:CifAccountReference>
-			</ns1:ListOfCifAccountReference>
-			<ns1:ListOfDnbAccount />
-			<ns1:ListOfAccount_BusinessAddress>
-				<ns1:Account_BusinessAddress
+<cus:updateOrganizationB2BV5_Output
+	xmlns:cus="http://siebel.com/CustomUI">
+	<cus:_sblesc_lstValue_grt />
+	<cus:Error_spcCode />
+	<cus:Error_spcMessage />
+	<cus:ErrorCode>0</cus:ErrorCode>
+	<cus:ErrorField />
+	<cus:ErrorMsg>OK</cus:ErrorMsg>
+	<cus:Object_spcId />
+	<cus:Process_spcInstance_spcId>2-FZ05O9N
+	</cus:Process_spcInstance_spcId>
+	<cus:RealtimePubSub>false</cus:RealtimePubSub>
+	<cus:Siebel_spcOperation_spcObject_spcId />
+	<cus:ListOfSwiOrganizationB2BOutIOV5
+		xmlns:cus="http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5">
+		<cus:Account>
+			<cus:Id>2-FYYWTGG</cus:Id>
+			<cus:RowId>2-FYYWTGG</cus:RowId>
+			<cus:PartyTypeCode>Organization</cus:PartyTypeCode>
+			<cus:PartyUId>2-FYYWTGG</cus:PartyUId>
+			<cus:LastUpdateSDQ>07/06/2016 15:41:28</cus:LastUpdateSDQ>
+			<cus:UpdatedBy>1-DJ7C1J</cus:UpdatedBy>
+			<cus:Updated>07/06/2016 15:41:28</cus:Updated>
+			<cus:Location>SCP589397</cus:Location>
+			<cus:IntegrationId>701976257</cus:IntegrationId>
+			<cus:Name>SILCO TEC UMWELTSCHUTZSYSTEME GMBH</cus:Name>
+			<cus:ACCORB2BLegalName>SILCO TEC UMWELTSCHUTZSYSTEME GMBH
+			</cus:ACCORB2BLegalName>
+			<cus:AccountStatus>0</cus:AccountStatus>
+			<cus:ACCORB2BSFAAccountStatus>CLIENT</cus:ACCORB2BSFAAccountStatus>
+			<cus:Status />
+			<cus:Type>SC</cus:Type>
+			<cus:ACCORB2BCreatedDate>07/06/2016 17:31:40
+			</cus:ACCORB2BCreatedDate>
+			<cus:AccountCreatedBy>APP_WS_51</cus:AccountCreatedBy>
+			<cus:ACCORB2BCreatedByLogin>DASSAN</cus:ACCORB2BCreatedByLogin>
+			<cus:ACCORB2BUpdated>07/06/2016 17:41:27</cus:ACCORB2BUpdated>
+			<cus:AccountUpdatedBy>APP_WS_50</cus:AccountUpdatedBy>
+			<cus:ACCORB2BUpdatedBy>DASSAN</cus:ACCORB2BUpdatedBy>
+			<cus:ACCORB2BPhonePrefix>49</cus:ACCORB2BPhonePrefix>
+			<cus:ACCORB2BClientType>COMP</cus:ACCORB2BClientType>
+			<cus:MainPhoneNumber>9071 58 379 0</cus:MainPhoneNumber>
+			<cus:ACCORB2BFaxPrefix />
+			<cus:MainFaxNumber />
+			<cus:HomePage />
+			<cus:ACCORB2BEmail />
+			<cus:ACCORB2BAccountResponsableLogin>DASSAN
+			</cus:ACCORB2BAccountResponsableLogin>
+			<cus:ACCORB2BResponsableNom>ASSENZA</cus:ACCORB2BResponsableNom>
+			<cus:ACCORB2BResponsablePrenom>Davide
+			</cus:ACCORB2BResponsablePrenom>
+			<cus:ParentAccountIntegrationId />
+			<cus:ACCORB2BParentAccountResponsableLogin />
+			<cus:ACCORB2BMasterAccountIntegrationId>701976257
+			</cus:ACCORB2BMasterAccountIntegrationId>
+			<cus:ACCORB2BBusinessType>1</cus:ACCORB2BBusinessType>
+			<cus:ACCORB2BKeyAccountClassification>12
+			</cus:ACCORB2BKeyAccountClassification>
+			<cus:ACCORB2BInactiveFlag>N</cus:ACCORB2BInactiveFlag>
+			<cus:ACCORB2BSystematicTracking>N</cus:ACCORB2BSystematicTracking>
+			<cus:DUNSNumber />
+			<cus:ACCORB2BCapital />
+			<cus:ACCORB2BCASociete />
+			<cus:ACCORB2BBusinessLine>J</cus:ACCORB2BBusinessLine>
+			<cus:ACCORB2BBusinessSector>96</cus:ACCORB2BBusinessSector>
+			<cus:ACCORB2BMainAccorDivision>CORPORATE
+			</cus:ACCORB2BMainAccorDivision>
+			<cus:ACCORB2BRegistrationNumber />
+			<cus:ACCORB2BTypeSociete />
+			<cus:Description />
+			<cus:ACCORDescription2 />
+			<cus:ACCORDescription3 />
+			<cus:ACCORB2BCreditManagement>gdm.credit.management@accor.com
+			</cus:ACCORB2BCreditManagement>
+			<cus:ACCORB2BLastUpdatedGrappe>07/06/2016 15:41:28
+			</cus:ACCORB2BLastUpdatedGrappe>
+			<cus:ACCORB2BLastUpdatedGrappeSystemId>50
+			</cus:ACCORB2BLastUpdatedGrappeSystemId>
+			<cus:ACCORContratNumber />
+			<cus:ACCORDNBDevise />
+			<cus:ACCORDNBNationalID />
+			<cus:ACCORDNBIDType />
+			<cus:ACCORDNBOutBusiness />
+			<cus:ACCORDNBTotalEmployees />
+			<cus:ACCORB2BAccountCategory>SC</cus:ACCORB2BAccountCategory>
+			<cus:ACCORB2BBookingCodeSource />
+			<cus:ACCORB2BBookingCode />
+			<cus:ACCORB2BRecordType>Direct</cus:ACCORB2BRecordType>
+			<cus:ACCORB2BNetPriceRemunerationFlag>N
+			</cus:ACCORB2BNetPriceRemunerationFlag>
+			<cus:ACCORB2BReservationMode />
+			<cus:ACCORB2BTerritoryCode>D2S</cus:ACCORB2BTerritoryCode>
+			<cus:ACCORB2BAgencyUpdated />
+			<cus:ACCORB2BAgencyCreated />
+			<cus:ACCORB2BAccountStatus>0</cus:ACCORB2BAccountStatus>
+			<cus:ACCORB2BHomeAgencyCode />
+			<cus:ACCORB2BPreviousAgencyCode />
+			<cus:ACCORB2BTransactionCode>A</cus:ACCORB2BTransactionCode>
+			<cus:ACCORB2BToBeDeleted>N</cus:ACCORB2BToBeDeleted>
+			<cus:ACCORB2BDeletionReason>N/A</cus:ACCORB2BDeletionReason>
+			<cus:ACCORB2BNetworkId />
+			<cus:ACCORB2BNetworkTARSCode />
+			<cus:ACCORB2BNetworkName />
+			<cus:ACCORB2BExternalAgencyCode />
+			<cus:ACCORB2BSuspiciousAgencyStatus />
+			<cus:ACCORB2BConsortiumName />
+			<cus:ACCORB2BSuspiciousAgencyComments />
+			<cus:ACCORB2BSuspiciousAgencyStatusLastUpdate />
+			<cus:ACCORB2BNoshowPercentage />
+			<cus:ACCORB2BCancelledRevenue />
+			<cus:ACCORB2BTARSTransferred>0</cus:ACCORB2BTARSTransferred>
+			<cus:ACCORB2BAccessCode1 />
+			<cus:ACCORB2BAccessCode2 />
+			<cus:ACCORB2BExpirationDate />
+			<cus:ACCORB2BSubsidiaryAccountClassification />
+			<cus:ACCORB2BIndividualGenericAccount>N
+			</cus:ACCORB2BIndividualGenericAccount>
+			<cus:ACCORB2BLeadSource>Phone Call</cus:ACCORB2BLeadSource>
+			<cus:ACCORB2BCreatedByDelphi />
+			<cus:ACCORB2BUpdatedByDelphi />
+			<cus:ListOfCifAccountReference>
+				<cus:CifAccountReference>
+					<cus:ExternalId1>2-FYYWTGG</cus:ExternalId1>
+					<cus:SystemNumber>50</cus:SystemNumber>
+				</cus:CifAccountReference>
+				<cus:CifAccountReference>
+					<cus:ExternalId1>489473</cus:ExternalId1>
+					<cus:SystemNumber>50</cus:SystemNumber>
+				</cus:CifAccountReference>
+				<cus:CifAccountReference>
+					<cus:ExternalId1>001b000003QsMDaAAN</cus:ExternalId1>
+					<cus:SystemNumber>51</cus:SystemNumber>
+				</cus:CifAccountReference>
+				<cus:CifAccountReference>
+					<cus:ExternalId1>2-FYYWTGG</cus:ExternalId1>
+					<cus:SystemNumber>51</cus:SystemNumber>
+				</cus:CifAccountReference>
+			</cus:ListOfCifAccountReference>
+			<cus:ListOfDnbAccount />
+			<cus:ListOfAccount_BusinessAddress>
+				<cus:Account_BusinessAddress
 					IsPrimaryMVG="Y">
-					<ns1:AddressId>2-FYYWTGL</ns1:AddressId>
-					<ns1:AddressIntegrationId>701976258</ns1:AddressIntegrationId>
-					<ns1:BillAddressFlag>N</ns1:BillAddressFlag>
-					<ns1:AddressName>701976258</ns1:AddressName>
-					<ns1:StreetAddress>HANS-GEIGER-STR. 6</ns1:StreetAddress>
-					<ns1:StreetAddress2 />
-					<ns1:ApartmentNumber />
-					<ns1:ACCORAddressLine4 />
-					<ns1:City>DILLINGEN</ns1:City>
-					<ns1:PostalCode>89407</ns1:PostalCode>
-					<ns1:Country>DE</ns1:Country>
-					<ns1:State />
-					<ns1:ACCORNPAIFlag>N</ns1:ACCORNPAIFlag>
-					<ns1:ACCORNPAIDate />
-					<ns1:ACCOROptOutFlag>N</ns1:ACCOROptOutFlag>
-					<ns1:ACCOROptOutDate />
-					<ns1:AddressCleanseVerifiedFlag>N
-					</ns1:AddressCleanseVerifiedFlag>
-					<ns1:AddressCleanseVerifiedStatus />
-					<ns1:ACCORAddressType>3</ns1:ACCORAddressType>
-					<ns1:ListOfACCORAccountAddressUsageType>
-						<ns1:ACCORAccountAddressUsageType
+					<cus:AddressId>2-FYYWTGL</cus:AddressId>
+					<cus:AddressIntegrationId>701976258</cus:AddressIntegrationId>
+					<cus:BillAddressFlag>N</cus:BillAddressFlag>
+					<cus:AddressName>701976258</cus:AddressName>
+					<cus:StreetAddress>HANS-GEIGER-STR. 6</cus:StreetAddress>
+					<cus:StreetAddress2 />
+					<cus:ApartmentNumber />
+					<cus:ACCORAddressLine4 />
+					<cus:City>DILLINGEN</cus:City>
+					<cus:PostalCode>89407</cus:PostalCode>
+					<cus:Country>DE</cus:Country>
+					<cus:State />
+					<cus:ACCORNPAIFlag>N</cus:ACCORNPAIFlag>
+					<cus:ACCORNPAIDate />
+					<cus:ACCOROptOutFlag>N</cus:ACCOROptOutFlag>
+					<cus:ACCOROptOutDate />
+					<cus:AddressCleanseVerifiedFlag>N
+					</cus:AddressCleanseVerifiedFlag>
+					<cus:AddressCleanseVerifiedStatus />
+					<cus:ACCORAddressType>3</cus:ACCORAddressType>
+					<cus:ListOfACCORAccountAddressUsageType>
+						<cus:ACCORAccountAddressUsageType
 							IsPrimaryMVG="N">
-							<ns1:ACCORAccountAddressUsage>Postal
-							</ns1:ACCORAccountAddressUsage>
-						</ns1:ACCORAccountAddressUsageType>
-					</ns1:ListOfACCORAccountAddressUsageType>
-				</ns1:Account_BusinessAddress>
-			</ns1:ListOfAccount_BusinessAddress>
-			<ns1:ListOfAccorSegment />
-			<ns1:ListOfAccorAccountSegment>
-				<ns1:AccorAccountSegment>
-					<ns1:Name>EUR</ns1:Name>
-					<ns1:Type2>18</ns1:Type2>
-				</ns1:AccorAccountSegment>
-			</ns1:ListOfAccorAccountSegment>
-			<ns1:ListOfAccorDistribution />
-			<ns1:ListOfAccorB2bAccountResaHabitsDistribMode />
-			<ns1:ListOfAccorB2bAccountResaHabitsResaMode />
-			<ns1:ListOfAccorB2bAccountCi />
-		</ns1:Account>
-	</ns1:ListOfSwiOrganizationB2BOutIOV5>
-</ns0:updateOrganizationB2BV5_Output>
+							<cus:ACCORAccountAddressUsage>Postal
+							</cus:ACCORAccountAddressUsage>
+						</cus:ACCORAccountAddressUsageType>
+					</cus:ListOfACCORAccountAddressUsageType>
+				</cus:Account_BusinessAddress>
+			</cus:ListOfAccount_BusinessAddress>
+			<cus:ListOfAccorSegment />
+			<cus:ListOfAccorAccountSegment>
+				<cus:AccorAccountSegment>
+					<cus:Name>EUR</cus:Name>
+					<cus:Type2>18</cus:Type2>
+				</cus:AccorAccountSegment>
+			</cus:ListOfAccorAccountSegment>
+			<cus:ListOfAccorDistribution />
+			<cus:ListOfAccorB2bAccountResaHabitsDistribMode />
+			<cus:ListOfAccorB2bAccountResaHabitsResaMode />
+			<cus:ListOfAccorB2bAccountCi />
+		</cus:Account>
+	</cus:ListOfSwiOrganizationB2BOutIOV5>
+</cus:updateOrganizationB2BV5_Output>

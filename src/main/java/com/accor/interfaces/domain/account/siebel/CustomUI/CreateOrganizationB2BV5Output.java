@@ -76,7 +76,7 @@ public class CreateOrganizationB2BV5Output {
     protected String realtimePubSub;
     @XmlElement(name = "Siebel_spcOperation_spcObject_spcId", required = true)
     protected String siebelSpcOperationSpcObjectSpcId;
-    @XmlElement(name = "ListOfSwiOrganizationB2BOutIOV5", namespace = "http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5", required = true)
+    @XmlElement(name = "ListOfSwiOrganizationB2BOutIOV5", required = true)
     protected ListOfSwiOrganizationB2BOutIOV5 listOfSwiOrganizationB2BOutIOV5;
 
     /**

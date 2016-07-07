@@ -79,7 +79,7 @@ public class JaxbXmlConverterTest {
 		
 		List<Class> classesHead = new ArrayList<Class>() ;
 		classesHead.add(UpdateOrganizationB2BV5Output.class);
-//		classesHead.add(com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.ListOfSwiOrganizationB2BOutIOV5.class);
+		classesHead.add(com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.ListOfSwiOrganizationB2BOutIOV5.class);
 //		classesHead.add(com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.Account.class);
 		converter.registerClasses(classesHead);
 		converter.registerPrefix("http://siebel.com/CustomUI","cus");
@@ -92,9 +92,9 @@ public class JaxbXmlConverterTest {
 		UpdateOrganizationB2BV5Output unmarshall2 = converter.unmarshall(xml);
 		UpdateOrganizationB2BV5Output unmarshall = converter.unmarshall(resourceAsStream);
 		
-		String xmlmarshall  = converter.marshall(unmarshall);
+		String xmlmarshall  = converter.marshall(unmarshall2);
 		
-		Assert.assertEquals("701976257", unmarshall.getListOfSwiOrganizationB2BOutIOV5().getAccount().get(0).getIntegrationId());
+		Assert.assertEquals("107985080", unmarshall2.getListOfSwiOrganizationB2BOutIOV5().getAccount().get(0).getIntegrationId());
 	}
 
 }
