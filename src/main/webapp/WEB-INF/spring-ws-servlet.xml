@@ -11,5 +11,7 @@
 	<sws:static-wsdl id="account" location="/WEB-INF/ANAIS-INT10-accountV5-MDM.wsdl" />
 	<sws:interceptors>
 		<bean class="org.springframework.ws.server.endpoint.interceptor.PayloadLoggingInterceptor" />
+		<bean class="org.springframework.ws.server.endpoint.interceptor.SoapEnvelopeLoggingInterceptor" />
+		 
 	</sws:interceptors>
 </beans>
