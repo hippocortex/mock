@@ -10,9 +10,9 @@ import javax.xml.stream.XMLStreamException;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.accor.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Input;
-import com.accor.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Output;
-import com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2bio.ListOfSwiOrganizationB2BIO;
+import com.accor.asa.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Input;
+import com.accor.asa.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Output;
+import com.accor.asa.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.ListOfSwiOrganizationB2BOutIOV5;
 import com.sb.tools.JaxbXmlConverter;
 import com.sb.tools.StringUtilities;
 
@@ -80,7 +80,7 @@ public class JaxbXmlConverterTest {
 		
 		List<Class> classesHead = new ArrayList<Class>() ;
 		classesHead.add(UpdateOrganizationB2BV5Output.class);
-		classesHead.add(com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.ListOfSwiOrganizationB2BOutIOV5.class);
+		classesHead.add(ListOfSwiOrganizationB2BOutIOV5.class);
 //		classesHead.add(com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.Account.class);
 		converter.registerClasses(classesHead);
 		converter.registerPrefix("http://siebel.com/CustomUI","cus");

@@ -15,12 +15,12 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import com.accor.interfaces.domain.account.siebel.CustomUI.CreateOrganizationB2BV5Input;
-import com.accor.interfaces.domain.account.siebel.CustomUI.CreateOrganizationB2BV5Output;
-import com.accor.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Input;
-import com.accor.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Output;
-import com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.Account;
-import com.accor.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.ListOfSwiOrganizationB2BOutIOV5;
+import com.accor.asa.interfaces.domain.account.siebel.CustomUI.CreateOrganizationB2BV5Input;
+import com.accor.asa.interfaces.domain.account.siebel.CustomUI.CreateOrganizationB2BV5Output;
+import com.accor.asa.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Input;
+import com.accor.asa.interfaces.domain.account.siebel.CustomUI.UpdateOrganizationB2BV5Output;
+import com.accor.asa.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.Account;
+import com.accor.asa.interfaces.domain.account.siebel.xml.swiorganizationb2boutiov5.ListOfSwiOrganizationB2BOutIOV5;
 import com.sb.tools.JaxbXmlConverter;
 import com.sb.tools.StringTool;
 

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
-	targetNamespace="http://siebel.com/CustomUI" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	xmlns:tns="http://siebel.com/CustomUI">
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsdLocal1="http://www.siebel.com/xml/SwiOrganizationB2BIOV5" targetNamespace="http://siebel.com/CustomUI" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsdLocal2="http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://siebel.com/CustomUI">
 	<types>
-		<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" targetNamespace="http://siebel.com/CustomUI"
-			xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" targetNamespace="http://siebel.com/CustomUI" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5"></xsd:import>
+			<xsd:import namespace="http://www.siebel.com/xml/SwiOrganizationB2BIOV5"></xsd:import>
 			<xsd:element name="createOrganizationB2BV5_Input">
 				<xsd:complexType>
 					<xsd:sequence>
@@ -14,7 +13,7 @@
 						<xsd:element name="RealtimePubSub" type="xsd:string"></xsd:element>
 						<xsd:element name="Siebel_spcOperation_spcObject_spcId" type="xsd:string"></xsd:element>
 						<xsd:element name="_sblesc_lstValue_grt" type="xsd:string"></xsd:element>
-						<xsd:element ref="ListOfSwiOrganizationB2BIO"></xsd:element>
+						<xsd:element ref="xsdLocal1:ListOfSwiOrganizationB2BIO"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
@@ -31,7 +30,7 @@
 						<xsd:element name="Process_spcInstance_spcId" type="xsd:string"></xsd:element>
 						<xsd:element name="RealtimePubSub" type="xsd:string"></xsd:element>
 						<xsd:element name="Siebel_spcOperation_spcObject_spcId" type="xsd:string"></xsd:element>
-						<xsd:element ref="ListOfSwiOrganizationB2BOutIOV5"></xsd:element>
+						<xsd:element ref="xsdLocal2:ListOfSwiOrganizationB2BOutIOV5"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
@@ -44,7 +43,7 @@
 						<xsd:element name="RealtimePubSub" type="xsd:string"></xsd:element>
 						<xsd:element name="Siebel_spcOperation_spcObject_spcId" type="xsd:string"></xsd:element>
 						<xsd:element name="_sblesc_lstValue_grt" type="xsd:string"></xsd:element>
-						<xsd:element ref="ListOfSwiOrganizationB2BIO"></xsd:element>
+						<xsd:element ref="xsdLocal1:ListOfSwiOrganizationB2BIO"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
@@ -61,27 +60,26 @@
 						<xsd:element name="Process_spcInstance_spcId" type="xsd:string"></xsd:element>
 						<xsd:element name="RealtimePubSub" type="xsd:string"></xsd:element>
 						<xsd:element name="Siebel_spcOperation_spcObject_spcId" type="xsd:string"></xsd:element>
-						<xsd:element ref="ListOfSwiOrganizationB2BOutIOV5"></xsd:element>
+						<xsd:element ref="xsdLocal2:ListOfSwiOrganizationB2BOutIOV5"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
 		</xsd:schema>
-		<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+		<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsdLocal1="http://www.siebel.com/xml/SwiOrganizationB2BIOV5" targetNamespace="http://www.siebel.com/xml/SwiOrganizationB2BIOV5" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 			<xsd:annotation>
 				<xsd:documentation>Copyright (C) 2001-2004 Siebel Systems, Inc. All
-					rights reserved. Siebel XSD
-					Generation
+					rights reserved. Siebel XSD Generation
 				</xsd:documentation>
 			</xsd:annotation>
-			<xsd:element name="ListOfSwiOrganizationB2BIO" type="ListOfSwiOrganizationB2BIO"></xsd:element>
+			<xsd:element name="ListOfSwiOrganizationB2BIO" type="xsdLocal1:ListOfSwiOrganizationB2BIO"></xsd:element>
 			<xsd:complexType name="ListOfSwiOrganizationB2BIOTopElmt">
 				<xsd:sequence>
-					<xsd:element name="ListOfSwiOrganizationB2BIO" maxOccurs="1" minOccurs="1" type="ListOfSwiOrganizationB2BIO"></xsd:element>
+					<xsd:element name="ListOfSwiOrganizationB2BIO" maxOccurs="1" minOccurs="1" type="xsdLocal1:ListOfSwiOrganizationB2BIO"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="ListOfSwiOrganizationB2BIO">
 				<xsd:sequence>
-					<xsd:element name="Account" maxOccurs="unbounded" minOccurs="1" type="Account"></xsd:element>
+					<xsd:element name="Account" maxOccurs="unbounded" minOccurs="1" type="xsdLocal1:Account"></xsd:element>
 				</xsd:sequence>
 				<xsd:attribute name="ExternalSystemId" type="xsd:string" />
 			</xsd:complexType>
@@ -182,25 +180,22 @@
 					<xsd:element name="ACCORB2BLeadSource" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="ACCORB2BCreatedByDelphi" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="ACCORB2BUpdatedByDelphi" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
-					<xsd:element name="ListOfCifAccountReference" maxOccurs="1" minOccurs="0" type="ListOfCifAccountReference"></xsd:element>
-					<xsd:element name="ListOfDnbAccount" maxOccurs="1" minOccurs="0" type="ListOfDnbAccount"></xsd:element>
-					<xsd:element name="ListOfAccorSegment" maxOccurs="1" minOccurs="0" type="ListOfAccorSegment"></xsd:element>
-					<xsd:element name="ListOfAccount_BusinessAddress" maxOccurs="1" minOccurs="0"
-						type="ListOfAccount_BusinessAddress"></xsd:element>
-					<xsd:element name="ListOfAccorAccountSegment" maxOccurs="1" minOccurs="0" type="ListOfAccorAccountSegment"></xsd:element>
-					<xsd:element name="ListOfAccorDistribution" maxOccurs="1" minOccurs="0" type="ListOfAccorDistribution"></xsd:element>
-					<xsd:element name="ListOfAccorB2bAccountResaHabitsDistribMode" maxOccurs="1" minOccurs="0"
-						type="ListOfAccorB2bAccountResaHabitsDistribMode"></xsd:element>
-					<xsd:element name="ListOfAccorB2bAccountResaHabitsResaMode" maxOccurs="1" minOccurs="0"
-						type="ListOfAccorB2bAccountResaHabitsResaMode"></xsd:element>
-					<xsd:element name="ListOfAccorB2bAccountCi" maxOccurs="1" minOccurs="0" type="ListOfAccorB2bAccountCi"></xsd:element>
+					<xsd:element name="ListOfCifAccountReference" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCifAccountReference"></xsd:element>
+					<xsd:element name="ListOfDnbAccount" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfDnbAccount"></xsd:element>
+					<xsd:element name="ListOfAccorSegment" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfAccorSegment"></xsd:element>
+					<xsd:element name="ListOfAccount_BusinessAddress" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfAccount_BusinessAddress"></xsd:element>
+					<xsd:element name="ListOfAccorAccountSegment" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfAccorAccountSegment"></xsd:element>
+					<xsd:element name="ListOfAccorDistribution" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfAccorDistribution"></xsd:element>
+					<xsd:element name="ListOfAccorB2bAccountResaHabitsDistribMode" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfAccorB2bAccountResaHabitsDistribMode"></xsd:element>
+					<xsd:element name="ListOfAccorB2bAccountResaHabitsResaMode" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfAccorB2bAccountResaHabitsResaMode"></xsd:element>
+					<xsd:element name="ListOfAccorB2bAccountCi" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfAccorB2bAccountCi"></xsd:element>
 				</xsd:sequence>
 				<xsd:attribute name="Operation" type="xsd:string"></xsd:attribute>
 				<xsd:attribute name="Searchspec" type="xsd:string"></xsd:attribute>
 			</xsd:complexType>
 			<xsd:complexType name="ListOfCifAccountReference">
 				<xsd:sequence>
-					<xsd:element name="CifAccountReference" maxOccurs="unbounded" minOccurs="0" type="CifAccountReference"></xsd:element>
+					<xsd:element name="CifAccountReference" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CifAccountReference"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="CifAccountReference">
@@ -211,7 +206,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfDnbAccount">
 				<xsd:sequence>
-					<xsd:element name="DnbAccount" maxOccurs="unbounded" minOccurs="0" type="DnbAccount"></xsd:element>
+					<xsd:element name="DnbAccount" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:DnbAccount"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="DnbAccount">
@@ -270,12 +265,12 @@
 					<xsd:element name="ACCORDNBSIC5" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="ACCORDNBSIC6" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="ACCORB2BOriginalLimitCurrency" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
-					<xsd:element name="ListOfDnbSic" maxOccurs="1" minOccurs="0" type="ListOfDnbSic"></xsd:element>
+					<xsd:element name="ListOfDnbSic" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfDnbSic"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorSegment">
 				<xsd:sequence>
-					<xsd:element name="AccorSegment" maxOccurs="unbounded" minOccurs="0" type="AccorSegment"></xsd:element>
+					<xsd:element name="AccorSegment" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:AccorSegment"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorSegment">
@@ -286,7 +281,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccount_BusinessAddress">
 				<xsd:sequence>
-					<xsd:element name="Account_BusinessAddress" maxOccurs="unbounded" minOccurs="0" type="Account_BusinessAddress"></xsd:element>
+					<xsd:element name="Account_BusinessAddress" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:Account_BusinessAddress"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="Account_BusinessAddress">
@@ -310,8 +305,7 @@
 					<xsd:element name="AddressCleanseVerifiedFlag" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="AddressCleanseVerifiedStatus" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="ACCORAddressType" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
-					<xsd:element name="ListOfACCORAccountAddressUsageType" maxOccurs="1" minOccurs="0"
-						type="ListOfACCORAccountAddressUsageType"></xsd:element>
+					<xsd:element name="ListOfACCORAccountAddressUsageType" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfACCORAccountAddressUsageType"></xsd:element>
 				</xsd:sequence>
 				<xsd:attribute name="IsPrimaryMVG" type="xsd:string"></xsd:attribute>
 				<xsd:attribute name="Operation" type="xsd:string"></xsd:attribute>
@@ -319,7 +313,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorAccountSegment">
 				<xsd:sequence>
-					<xsd:element name="AccorAccountSegment" maxOccurs="unbounded" minOccurs="0" type="AccorAccountSegment"></xsd:element>
+					<xsd:element name="AccorAccountSegment" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:AccorAccountSegment"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorAccountSegment">
@@ -338,7 +332,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorDistribution">
 				<xsd:sequence>
-					<xsd:element name="AccorDistribution" maxOccurs="unbounded" minOccurs="0" type="AccorDistribution"></xsd:element>
+					<xsd:element name="AccorDistribution" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:AccorDistribution"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorDistribution">
@@ -365,8 +359,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorB2bAccountResaHabitsDistribMode">
 				<xsd:sequence>
-					<xsd:element name="AccorB2bAccountResaHabitsDistribMode" maxOccurs="unbounded" minOccurs="0"
-						type="AccorB2bAccountResaHabitsDistribMode"></xsd:element>
+					<xsd:element name="AccorB2bAccountResaHabitsDistribMode" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:AccorB2bAccountResaHabitsDistribMode"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorB2bAccountResaHabitsDistribMode">
@@ -386,8 +379,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorB2bAccountResaHabitsResaMode">
 				<xsd:sequence>
-					<xsd:element name="AccorB2bAccountResaHabitsResaMode" maxOccurs="unbounded" minOccurs="0"
-						type="AccorB2bAccountResaHabitsResaMode"></xsd:element>
+					<xsd:element name="AccorB2bAccountResaHabitsResaMode" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:AccorB2bAccountResaHabitsResaMode"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorB2bAccountResaHabitsResaMode">
@@ -407,7 +399,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorB2bAccountCi">
 				<xsd:sequence>
-					<xsd:element name="AccorB2bAccountCi" maxOccurs="unbounded" minOccurs="0" type="AccorB2bAccountCi"></xsd:element>
+					<xsd:element name="AccorB2bAccountCi" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:AccorB2bAccountCi"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorB2bAccountCi">
@@ -426,7 +418,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfDnbSic">
 				<xsd:sequence>
-					<xsd:element name="DnbSic" maxOccurs="unbounded" minOccurs="0" type="DnbSic"></xsd:element>
+					<xsd:element name="DnbSic" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:DnbSic"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="DnbSic">
@@ -442,8 +434,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfACCORAccountAddressUsageType">
 				<xsd:sequence>
-					<xsd:element name="ACCORAccountAddressUsageType" maxOccurs="unbounded" minOccurs="0"
-						type="ACCORAccountAddressUsageType"></xsd:element>
+					<xsd:element name="ACCORAccountAddressUsageType" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:ACCORAccountAddressUsageType"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="ACCORAccountAddressUsageType">
@@ -455,23 +446,21 @@
 				<xsd:attribute name="Operation" type="xsd:string"></xsd:attribute>
 			</xsd:complexType>
 		</xsd:schema>
-		<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" targetNamespace="http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5" xmlns:xsdLocal2="http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 			<xsd:annotation>
 				<xsd:documentation>Copyright (C) 2001-2004 Siebel Systems, Inc. All
-					rights reserved. Siebel XSD
-					Generation
+					rights reserved. Siebel XSD Generation
 				</xsd:documentation>
 			</xsd:annotation>
-			<xsd:element name="ListOfSwiOrganizationB2BOutIOV5" type="ListOfSwiOrganizationB2BOutIOV5"></xsd:element>
+			<xsd:element name="ListOfSwiOrganizationB2BOutIOV5" type="xsdLocal2:ListOfSwiOrganizationB2BOutIOV5"></xsd:element>
 			<xsd:complexType name="ListOfSwiOrganizationB2BOutIOV5TopElmt">
 				<xsd:sequence>
-					<xsd:element name="ListOfSwiOrganizationB2BOutIOV5" maxOccurs="1" minOccurs="1"
-						type="ListOfSwiOrganizationB2BOutIOV5"></xsd:element>
+					<xsd:element name="ListOfSwiOrganizationB2BOutIOV5" maxOccurs="1" minOccurs="1" type="xsdLocal2:ListOfSwiOrganizationB2BOutIOV5"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="ListOfSwiOrganizationB2BOutIOV5">
 				<xsd:sequence>
-					<xsd:element name="Account" maxOccurs="unbounded" minOccurs="1" type="Account"></xsd:element>
+					<xsd:element name="Account" maxOccurs="unbounded" minOccurs="1" type="xsdLocal2:Account"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="Account">
@@ -568,25 +557,22 @@
 					<xsd:element name="ACCORB2BLeadSource" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="ACCORB2BCreatedByDelphi" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="ACCORB2BUpdatedByDelphi" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
-					<xsd:element name="ListOfCifAccountReference" maxOccurs="1" minOccurs="0" type="ListOfCifAccountReference"></xsd:element>
-					<xsd:element name="ListOfDnbAccount" maxOccurs="1" minOccurs="0" type="ListOfDnbAccount"></xsd:element>
-					<xsd:element name="ListOfAccount_BusinessAddress" maxOccurs="1" minOccurs="0"
-						type="ListOfAccount_BusinessAddress"></xsd:element>
-					<xsd:element name="ListOfAccorSegment" maxOccurs="1" minOccurs="0" type="ListOfAccorSegment"></xsd:element>
-					<xsd:element name="ListOfAccorAccountSegment" maxOccurs="1" minOccurs="0" type="ListOfAccorAccountSegment"></xsd:element>
-					<xsd:element name="ListOfAccorDistribution" maxOccurs="1" minOccurs="0" type="ListOfAccorDistribution"></xsd:element>
-					<xsd:element name="ListOfAccorB2bAccountResaHabitsDistribMode" maxOccurs="1" minOccurs="0"
-						type="ListOfAccorB2bAccountResaHabitsDistribMode"></xsd:element>
-					<xsd:element name="ListOfAccorB2bAccountResaHabitsResaMode" maxOccurs="1" minOccurs="0"
-						type="ListOfAccorB2bAccountResaHabitsResaMode"></xsd:element>
-					<xsd:element name="ListOfAccorB2bAccountCi" maxOccurs="1" minOccurs="0" type="ListOfAccorB2bAccountCi"></xsd:element>
+					<xsd:element name="ListOfCifAccountReference" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfCifAccountReference"></xsd:element>
+					<xsd:element name="ListOfDnbAccount" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfDnbAccount"></xsd:element>
+					<xsd:element name="ListOfAccount_BusinessAddress" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfAccount_BusinessAddress"></xsd:element>
+					<xsd:element name="ListOfAccorSegment" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfAccorSegment"></xsd:element>
+					<xsd:element name="ListOfAccorAccountSegment" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfAccorAccountSegment"></xsd:element>
+					<xsd:element name="ListOfAccorDistribution" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfAccorDistribution"></xsd:element>
+					<xsd:element name="ListOfAccorB2bAccountResaHabitsDistribMode" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfAccorB2bAccountResaHabitsDistribMode"></xsd:element>
+					<xsd:element name="ListOfAccorB2bAccountResaHabitsResaMode" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfAccorB2bAccountResaHabitsResaMode"></xsd:element>
+					<xsd:element name="ListOfAccorB2bAccountCi" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfAccorB2bAccountCi"></xsd:element>
 				</xsd:sequence>
 				<xsd:attribute name="Operation" type="xsd:string"></xsd:attribute>
 				<xsd:attribute name="Searchspec" type="xsd:string"></xsd:attribute>
 			</xsd:complexType>
 			<xsd:complexType name="ListOfCifAccountReference">
 				<xsd:sequence>
-					<xsd:element name="CifAccountReference" maxOccurs="unbounded" minOccurs="0" type="CifAccountReference"></xsd:element>
+					<xsd:element name="CifAccountReference" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:CifAccountReference"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="CifAccountReference">
@@ -597,7 +583,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfDnbAccount">
 				<xsd:sequence>
-					<xsd:element name="DnbAccount" maxOccurs="unbounded" minOccurs="0" type="DnbAccount"></xsd:element>
+					<xsd:element name="DnbAccount" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:DnbAccount"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="DnbAccount">
@@ -656,12 +642,12 @@
 					<xsd:element name="ACCORDNBSIC5" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="ACCORDNBSIC6" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="ACCORB2BOriginalLimitCurrency" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
-					<xsd:element name="ListOfDnbSic" maxOccurs="1" minOccurs="0" type="ListOfDnbSic"></xsd:element>
+					<xsd:element name="ListOfDnbSic" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfDnbSic"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccount_BusinessAddress">
 				<xsd:sequence>
-					<xsd:element name="Account_BusinessAddress" maxOccurs="unbounded" minOccurs="0" type="Account_BusinessAddress"></xsd:element>
+					<xsd:element name="Account_BusinessAddress" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:Account_BusinessAddress"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="Account_BusinessAddress">
@@ -685,8 +671,7 @@
 					<xsd:element name="AddressCleanseVerifiedFlag" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="AddressCleanseVerifiedStatus" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
 					<xsd:element name="ACCORAddressType" maxOccurs="1" minOccurs="0" type="xsd:string"></xsd:element>
-					<xsd:element name="ListOfACCORAccountAddressUsageType" maxOccurs="1" minOccurs="0"
-						type="ListOfACCORAccountAddressUsageType"></xsd:element>
+					<xsd:element name="ListOfACCORAccountAddressUsageType" maxOccurs="1" minOccurs="0" type="xsdLocal2:ListOfACCORAccountAddressUsageType"></xsd:element>
 				</xsd:sequence>
 				<xsd:attribute name="IsPrimaryMVG" type="xsd:string"></xsd:attribute>
 				<xsd:attribute name="Operation" type="xsd:string"></xsd:attribute>
@@ -694,7 +679,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorSegment">
 				<xsd:sequence>
-					<xsd:element name="AccorSegment" maxOccurs="unbounded" minOccurs="0" type="AccorSegment"></xsd:element>
+					<xsd:element name="AccorSegment" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:AccorSegment"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorSegment">
@@ -705,7 +690,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorAccountSegment">
 				<xsd:sequence>
-					<xsd:element name="AccorAccountSegment" maxOccurs="unbounded" minOccurs="0" type="AccorAccountSegment"></xsd:element>
+					<xsd:element name="AccorAccountSegment" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:AccorAccountSegment"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorAccountSegment">
@@ -724,7 +709,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorDistribution">
 				<xsd:sequence>
-					<xsd:element name="AccorDistribution" maxOccurs="unbounded" minOccurs="0" type="AccorDistribution"></xsd:element>
+					<xsd:element name="AccorDistribution" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:AccorDistribution"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorDistribution">
@@ -751,8 +736,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorB2bAccountResaHabitsDistribMode">
 				<xsd:sequence>
-					<xsd:element name="AccorB2bAccountResaHabitsDistribMode" maxOccurs="unbounded" minOccurs="0"
-						type="AccorB2bAccountResaHabitsDistribMode"></xsd:element>
+					<xsd:element name="AccorB2bAccountResaHabitsDistribMode" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:AccorB2bAccountResaHabitsDistribMode"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorB2bAccountResaHabitsDistribMode">
@@ -772,8 +756,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorB2bAccountResaHabitsResaMode">
 				<xsd:sequence>
-					<xsd:element name="AccorB2bAccountResaHabitsResaMode" maxOccurs="unbounded" minOccurs="0"
-						type="AccorB2bAccountResaHabitsResaMode"></xsd:element>
+					<xsd:element name="AccorB2bAccountResaHabitsResaMode" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:AccorB2bAccountResaHabitsResaMode"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorB2bAccountResaHabitsResaMode">
@@ -793,7 +776,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfAccorB2bAccountCi">
 				<xsd:sequence>
-					<xsd:element name="AccorB2bAccountCi" maxOccurs="unbounded" minOccurs="0" type="AccorB2bAccountCi"></xsd:element>
+					<xsd:element name="AccorB2bAccountCi" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:AccorB2bAccountCi"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="AccorB2bAccountCi">
@@ -812,7 +795,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfDnbSic">
 				<xsd:sequence>
-					<xsd:element name="DnbSic" maxOccurs="unbounded" minOccurs="0" type="DnbSic"></xsd:element>
+					<xsd:element name="DnbSic" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:DnbSic"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="DnbSic">
@@ -828,8 +811,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="ListOfACCORAccountAddressUsageType">
 				<xsd:sequence>
-					<xsd:element name="ACCORAccountAddressUsageType" maxOccurs="unbounded" minOccurs="0"
-						type="ACCORAccountAddressUsageType"></xsd:element>
+					<xsd:element name="ACCORAccountAddressUsageType" maxOccurs="unbounded" minOccurs="0" type="xsdLocal2:ACCORAccountAddressUsageType"></xsd:element>
 				</xsd:sequence>
 			</xsd:complexType>
 			<xsd:complexType name="ACCORAccountAddressUsageType">
@@ -886,9 +868,8 @@
 		</operation>
 	</binding>
 	<service name="OrganizationServiceB2BV5">
-		<port binding="tns:UCM_spcOrganization_spcCustomer_spcProfile_spcIntegration_spcSOAP_spcProcess_spcB2B_spcV5"
-			name="UCM_spcOrganization_spcCustomer_spcProfile_spcIntegration_spcSOAP_spcProcess_spcB2B_spcV5">
-			<soap:address location="http://localhost:9393/mdm/mockAccount"></soap:address>
+		<port binding="tns:UCM_spcOrganization_spcCustomer_spcProfile_spcIntegration_spcSOAP_spcProcess_spcB2B_spcV5" name="UCM_spcOrganization_spcCustomer_spcProfile_spcIntegration_spcSOAP_spcProcess_spcB2B_spcV5">
+			<soap:address location="http://&lt;Web Serveur&gt;:8080/mdmws/start.swe?SWEExtSource=AnonWebService&amp;SWEExtCmd=Execute"></soap:address>
 		</port>
 	</service>
 </definitions>
