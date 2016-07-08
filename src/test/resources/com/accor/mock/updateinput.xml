@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updateOrganizationB2BV5_Input xmlns="http://siebel.com/CustomUI">
+	<Process_spcInstance_spcId />
+	<AccountOperation>SETACCNT</AccountOperation>
+	<Object_spcId />
+	<RealtimePubSub>false</RealtimePubSub>
+	<Siebel_spcOperation_spcObject_spcId />
+	<_sblesc_lstValue_grt />
+	<ListOfSwiOrganizationB2BIO ExternalSystemId="51">
+		<Account Operation="Upsert" xmlns="http://www.siebel.com/xml/SwiOrganizationB2BIOV5">
+			<Location>SCP492525</Location>
+			<IntegrationId>55412490</IntegrationId>
+			<Name>Test Alexis Account</Name>
+			<ACCORB2BLegalName>Test Alexis Account</ACCORB2BLegalName>
+			<ACCORB2BSFAAccountStatus>PROSPECT</ACCORB2BSFAAccountStatus>
+			<ACCORB2BCreatedDate>2016-06-28T17:10:57Z</ACCORB2BCreatedDate>
+			<ACCORB2BCreatedByLogin>AADRON</ACCORB2BCreatedByLogin>
+			<ACCORB2BUpdated>2016-07-06T12:08:34Z</ACCORB2BUpdated>
+			<ACCORB2BUpdatedBy>sbarbe1</ACCORB2BUpdatedBy>
+			<ACCORB2BEmail />
+			<ACCORB2BAccountResponsableLogin>AADRON</ACCORB2BAccountResponsableLogin>
+			<ParentAccountIntegrationId />
+			<ACCORB2BMasterAccountIntegrationId>55412490</ACCORB2BMasterAccountIntegrationId>
+			<ACCORB2BBusinessType>0</ACCORB2BBusinessType>
+			<ACCORB2BKeyAccountClassification>11</ACCORB2BKeyAccountClassification>
+			<ACCORB2BInactiveFlag>N</ACCORB2BInactiveFlag>
+			<ACCORB2BSystematicTracking>N</ACCORB2BSystematicTracking>
+			<ACCORB2BBusinessLine>A</ACCORB2BBusinessLine>
+			<ACCORB2BBusinessSector>08</ACCORB2BBusinessSector>
+			<ACCORB2BMainAccorDivision>CORPORATE</ACCORB2BMainAccorDivision>
+			<ACCORB2BRecordType>Direct</ACCORB2BRecordType>
+			<ACCORB2BToBeDeleted>N</ACCORB2BToBeDeleted>
+			<ACCORB2BDeletionReason>N/A</ACCORB2BDeletionReason>
+			<ListOfCifAccountReference>
+				<CifAccountReference>
+					<ExternalId1>0012600000D7ZopAAF</ExternalId1>
+					<SystemNumber>51</SystemNumber>
+				</CifAccountReference>
+			</ListOfCifAccountReference>
+			<ListOfAccorSegment />
+			<ListOfAccount_BusinessAddress>
+				<Account_BusinessAddress IsPrimaryMVG="Y" Operation="Upsert">
+					<AddressIntegrationId>55412491</AddressIntegrationId>
+					<StreetAddress>Test</StreetAddress>
+					<StreetAddress2>Test</StreetAddress2>
+					<ApartmentNumber>Test</ApartmentNumber>
+					<ACCORAddressLine4>Test</ACCORAddressLine4>
+					<City>Paris</City>
+					<PostalCode>45673</PostalCode>
+					<Country>FR</Country>
+					<State />
+					<ListOfACCORAccountAddressUsageType>
+						<ACCORAccountAddressUsageType>
+							<ACCORAccountAddressUsage>Postal</ACCORAccountAddressUsage>
+						</ACCORAccountAddressUsageType>
+					</ListOfACCORAccountAddressUsageType>
+				</Account_BusinessAddress>
+				<Account_BusinessAddress IsPrimaryMVG="N" Operation="Upsert">
+					<AddressIntegrationId>55412492</AddressIntegrationId>
+					<StreetAddress>Test</StreetAddress>
+					<StreetAddress2>Test</StreetAddress2>
+					<ApartmentNumber>Test</ApartmentNumber>
+					<ACCORAddressLine4>Test</ACCORAddressLine4>
+					<City>Paris</City>
+					<PostalCode>123456</PostalCode>
+					<Country>FR</Country>
+					<ListOfACCORAccountAddressUsageType>
+						<ACCORAccountAddressUsageType>
+							<ACCORAccountAddressUsage>Billing</ACCORAccountAddressUsage>
+						</ACCORAccountAddressUsageType>
+					</ListOfACCORAccountAddressUsageType>
+				</Account_BusinessAddress>
+			</ListOfAccount_BusinessAddress>
+			<ListOfAccorAccountSegment>
+				<AccorAccountSegment Operation="Upsert">
+					<Name>EUR</Name>
+					<Type2>18</Type2>
+				</AccorAccountSegment>
+			</ListOfAccorAccountSegment>
+		</Account>
+	</ListOfSwiOrganizationB2BIO>
+</updateOrganizationB2BV5_Input>

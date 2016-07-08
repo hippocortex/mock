@@ -77,7 +77,6 @@ public class AccountEndpoint {
 		//String name = accountNameExpression.evaluateFirst(accountRequest).getText() ;
 		UpdateOrganizationB2BV5Output output= new UpdateOrganizationB2BV5Output();
 		ListOfSwiOrganizationB2BOutIOV5 swiOrg ;
-		System.out.print("test log heroku");
 		
 		
 		//TODO generer le code compte SCPxxxxxx
