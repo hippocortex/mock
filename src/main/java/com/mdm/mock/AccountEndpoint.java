@@ -28,8 +28,7 @@ import com.sb.tools.StringTool;
  * http://docs.spring.io/spring-ws/docs/2.2.0.RELEASE/reference/htmlsingle/#
  * d4e112
  * 
- * @author sbarberye
- *
+ * @author sbarberye TODO : renseigner adresse postal et billing
  */
 @Endpoint
 public class AccountEndpoint {
@@ -45,70 +44,98 @@ public class AccountEndpoint {
 		accountNameExpression = xPathFactory.compile("//swi:ACCORB2BLegalName", Filters.element(), null, namespace);
 	}
 
-	@PayloadRoot(namespace=NAMESPACE_URI,localPart = "createOrganizationB2BV5_Input")
-	public @ResponsePayload CreateOrganizationB2BV5Output handleAccountRequest(@RequestPayload CreateOrganizationB2BV5Input accountRequest){
-		//String name = accountNameExpression.evaluateFirst(accountRequest).getText() ;
-		CreateOrganizationB2BV5Output output= new CreateOrganizationB2BV5Output();
+	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "createOrganizationB2BV5_Input")
+	public @ResponsePayload CreateOrganizationB2BV5Output handleAccountRequest(
+			@RequestPayload CreateOrganizationB2BV5Input accountRequest) {
+		// String name =
+		// accountNameExpression.evaluateFirst(accountRequest).getText() ;
+		CreateOrganizationB2BV5Output output = new CreateOrganizationB2BV5Output();
 		ListOfSwiOrganizationB2BOutIOV5 swiOrg = new ListOfSwiOrganizationB2BOutIOV5();
-		System.out.print("ok : "+accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getACCORB2BLegalName());
-		
-		
-		//TODO generer le code compte SCPxxxxxx
-		String location = !StringUtils.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation())?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation():"SCP"+StringTool.randomString(6); 
-		String integrationID=!StringUtils.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId())?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId():StringTool.randomString(25);
-		
-		
+
+		// TODO generer le code compte SCPxxxxxx
+		String location = !StringUtils
+				.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation())
+						? accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation()
+						: "SCP" + StringTool.randomString(6);
+		String integrationID = !StringUtils
+				.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId())
+						? accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId()
+						: StringTool.randomString(25);
+		swiOrg = ((CreateOrganizationB2BV5Output) getPayload("CREATE")).getListOfSwiOrganizationB2BOutIOV5();
+
 		Account outAccount = new Account();
 		outAccount.setIntegrationId(integrationID);
 		outAccount.setLocation(location);
 		swiOrg.addAccount(outAccount);
 		output.setListOfSwiOrganizationB2BOutIOV5(swiOrg);
-		//MIGAG - CHM - Add the booking code from MDM
-       // accountParam.BookingCode__c = calloutResponse.ListOfSwiOrganizationB2BOutIOV5.Account[0].ACCORB2BBookingCode;
-		
+		// MIGAG - CHM - Add the booking code from MDM
+		// accountParam.BookingCode__c =
+		// calloutResponse.ListOfSwiOrganizationB2BOutIOV5.Account[0].ACCORB2BBookingCode;
+
 		return output;
-			
+
 	}
-	
-	
-	
-	@PayloadRoot(   namespace=NAMESPACE_URI,localPart = "updateOrganizationB2BV5_Input")
-	public @ResponsePayload UpdateOrganizationB2BV5Output handleAccountUpdate(@RequestPayload UpdateOrganizationB2BV5Input accountRequest){
-		//String name = accountNameExpression.evaluateFirst(accountRequest).getText() ;
-		UpdateOrganizationB2BV5Output output= new UpdateOrganizationB2BV5Output();
-		ListOfSwiOrganizationB2BOutIOV5 swiOrg ;
-		
-		
-		//TODO generer le code compte SCPxxxxxx
-		String location = !StringUtils.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation())?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation():"SCP"+StringTool.randomString(6); 
-		String integrationID=!StringUtils.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId())?accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId():StringTool.randomString(25);
-		
-		swiOrg =  ((UpdateOrganizationB2BV5Output) getPayload()).getListOfSwiOrganizationB2BOutIOV5();
+
+	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "updateOrganizationB2BV5_Input")
+	public @ResponsePayload UpdateOrganizationB2BV5Output handleAccountUpdate(
+			@RequestPayload UpdateOrganizationB2BV5Input accountRequest) {
+		// String name =
+		// accountNameExpression.evaluateFirst(accountRequest).getText() ;
+		UpdateOrganizationB2BV5Output output = new UpdateOrganizationB2BV5Output();
+		ListOfSwiOrganizationB2BOutIOV5 swiOrg;
+
+		String location = !StringUtils
+				.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation())
+						? accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getLocation()
+						: "SCP" + StringTool.randomString(6);
+		String integrationID = !StringUtils
+				.isEmpty(accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId())
+						? accountRequest.getListOfSwiOrganizationB2BIO().getAccount().get(0).getIntegrationId()
+						: StringTool.randomString(25);
+
+		swiOrg = ((UpdateOrganizationB2BV5Output) getPayload("UPDATE")).getListOfSwiOrganizationB2BOutIOV5();
 		Account outAccount = swiOrg.getAccount().get(0);
 		outAccount.setIntegrationId(integrationID);
 		outAccount.setLocation(location);
 		swiOrg.addAccount(outAccount);
 		output.setListOfSwiOrganizationB2BOutIOV5(swiOrg);
-		//MIGAG - CHM - Add the booking code from MDM
-       // accountParam.BookingCode__c = calloutResponse.ListOfSwiOrganizationB2BOutIOV5.Account[0].ACCORB2BBookingCode;
-		
+		// MIGAG - CHM - Add the booking code from MDM
+		// accountParam.BookingCode__c =
+		// calloutResponse.ListOfSwiOrganizationB2BOutIOV5.Account[0].ACCORB2BBookingCode;
+
 		return output;
-			
+
 	}
-	
-	
-	
-	private Object getPayload(){
+
+	private Object getPayload(String type) {
 		ClassLoader cl = AccountEndpoint.class.getClassLoader();
-		InputStream inputStream = this.getClass().getResourceAsStream("/com/mdm/mock/updateAccount2.xml");
-		//final InputStream resourceAsStream = AccountEndpoint.class.getResourceAsStream( "updateAccount.xml" );
-		JaxbXmlConverter<UpdateOrganizationB2BV5Output> converter = new JaxbXmlConverter<UpdateOrganizationB2BV5Output>();
-		
-		List<Class> classesHead = new ArrayList<Class>() ;
-		classesHead.add(UpdateOrganizationB2BV5Output.class);
-		converter.registerClasses(classesHead);
-		converter.registerPrefix(NAMESPACE_URI, "cus");
-		return  converter.unmarshall(inputStream);
+		List<Class> classesHead = new ArrayList<Class>();
+		InputStream inputStream;
+		Object object = null;
+		switch (type) {
+		case "UPDATE":
+			inputStream = this.getClass().getResourceAsStream("/com/mdm/mock/createoutput.xml");
+			// final InputStream resourceAsStream =
+			// AccountEndpoint.class.getResourceAsStream( "updateAccount.xml" );
+			JaxbXmlConverter<UpdateOrganizationB2BV5Output> converter = new JaxbXmlConverter<UpdateOrganizationB2BV5Output>();
+
+			classesHead.add(UpdateOrganizationB2BV5Output.class);
+			converter.registerClasses(classesHead);
+			converter.registerPrefix(NAMESPACE_URI, "cus");
+			object = converter.unmarshall(inputStream);
+		case "CREATE":
+			inputStream = this.getClass().getResourceAsStream("/com/mdm/mock/updateoutput.xml");
+			// final InputStream resourceAsStream =
+			// AccountEndpoint.class.getResourceAsStream( "updateAccount.xml" );
+			JaxbXmlConverter<UpdateOrganizationB2BV5Output> updconverter = new JaxbXmlConverter<UpdateOrganizationB2BV5Output>();
+
+			classesHead.add(UpdateOrganizationB2BV5Output.class);
+			updconverter.registerClasses(classesHead);
+			updconverter.registerPrefix(NAMESPACE_URI, "cus");
+			object = updconverter.unmarshall(inputStream);
+		}
+		return object;
+
 	}
-	
+
 }

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<createOrganizationB2BV5_Input xmlns="http://siebel.com/CustomUI">
+	<Process_spcInstance_spcId />
+	<AccountOperation>CREAACCNT</AccountOperation>
+	<Object_spcId />
+	<RealtimePubSub>false</RealtimePubSub>
+	<Siebel_spcOperation_spcObject_spcId />
+	<_sblesc_lstValue_grt />
+	<ListOfSwiOrganizationB2BIO ExternalSystemId="51">
+		<Account xmlns="http://www.siebel.com/xml/SwiOrganizationB2BIOV5" Operation="Upsert">
+			<Name>test mock</Name>
+			<ACCORB2BLegalName>test mock</ACCORB2BLegalName>
+			<AccountStatus>1</AccountStatus>
+			<ACCORB2BSFAAccountStatus>PROSPECT</ACCORB2BSFAAccountStatus>
+			<ACCORB2BCreatedDate>2016-07-08T16:37:51Z</ACCORB2BCreatedDate>
+			<ACCORB2BCreatedByLogin>sbarbe1</ACCORB2BCreatedByLogin>
+			<ACCORB2BUpdated>2016-07-08T16:37:53Z</ACCORB2BUpdated>
+			<ACCORB2BUpdatedBy>sbarbe1</ACCORB2BUpdatedBy>
+			<ACCORB2BEmail />
+			<ACCORB2BAccountResponsableLogin>sbarbe1</ACCORB2BAccountResponsableLogin>
+			<ParentAccountIntegrationId />
+			<ACCORB2BBusinessType>1</ACCORB2BBusinessType>
+			<ACCORB2BKeyAccountClassification>12</ACCORB2BKeyAccountClassification>
+			<ACCORB2BInactiveFlag>N</ACCORB2BInactiveFlag>
+			<ACCORB2BSystematicTracking>N</ACCORB2BSystematicTracking>
+			<ACCORB2BBusinessLine>B</ACCORB2BBusinessLine>
+			<ACCORB2BBusinessSector>12</ACCORB2BBusinessSector>
+			<ACCORB2BMainAccorDivision>CORPORATE</ACCORB2BMainAccorDivision>
+			<ACCORB2BRecordType>Direct</ACCORB2BRecordType>
+			<ACCORB2BToBeDeleted>N</ACCORB2BToBeDeleted>
+			<ACCORB2BDeletionReason>N/A</ACCORB2BDeletionReason>
+			<ListOfCifAccountReference>
+				<CifAccountReference>
+					<ExternalId1>0012600000DJU42AAH</ExternalId1>
+					<SystemNumber>51</SystemNumber>
+				</CifAccountReference>
+			</ListOfCifAccountReference>
+			<ListOfAccorSegment>
+				<AccorSegment Operation="Upsert">
+					<AdditionalSegment>M&amp;E</AdditionalSegment>
+				</AccorSegment>
+				<AccorSegment Operation="Upsert">
+					<AdditionalSegment>TMC</AdditionalSegment>
+				</AccorSegment>
+			</ListOfAccorSegment>
+			<ListOfAccount_BusinessAddress>
+				<Account_BusinessAddress IsPrimaryMVG="Y" Operation="Upsert">
+					<StreetAddress />
+					<StreetAddress2 />
+					<ApartmentNumber />
+					<ACCORAddressLine4>2323</ACCORAddressLine4>
+					<City>maincity</City>
+					<PostalCode>56444</PostalCode>
+					<Country>FR</Country>
+					<State />
+					<ListOfACCORAccountAddressUsageType>
+						<ACCORAccountAddressUsageType>
+							<ACCORAccountAddressUsage>Postal</ACCORAccountAddressUsage>
+						</ACCORAccountAddressUsageType>
+					</ListOfACCORAccountAddressUsageType>
+				</Account_BusinessAddress>
+			</ListOfAccount_BusinessAddress>
+			<ListOfAccorAccountSegment>
+				<AccorAccountSegment Operation="Upsert">
+					<Name>EUR</Name>
+					<Type2>18</Type2>
+				</AccorAccountSegment>
+			</ListOfAccorAccountSegment>
+		</Account>
+	</ListOfSwiOrganizationB2BIO>
+</createOrganizationB2BV5_Input>

@@ -59,7 +59,7 @@ public class UpdateOrganizationB2BV5Input {
     protected String siebelSpcOperationSpcObjectSpcId;
     @XmlElement(name = "_sblesc_lstValue_grt", required = true)
     protected String sblescLstValueGrt;
-    @XmlElement(name = "ListOfSwiOrganizationB2BIO", namespace = "http://www.siebel.com/xml/SwiOrganizationB2BIOV5", required = true)
+    @XmlElement(name = "ListOfSwiOrganizationB2BIO", required = true)
     protected ListOfSwiOrganizationB2BIO listOfSwiOrganizationB2BIO;
 
     /**

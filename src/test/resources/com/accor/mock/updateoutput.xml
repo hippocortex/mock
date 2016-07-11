@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:updateOrganizationB2BV5_Output xmlns:ns="http://siebel.com/CustomUI">
+	<ns:Error_spcCode />
+	<ns:Error_spcMessage />
+	<ns:ErrorCode>0</ns:ErrorCode>
+	<ns:ErrorField />
+	<ns:ErrorMsg>OK</ns:ErrorMsg>
+	<ns:Object_spcId />
+	<ns:Process_spcInstance_spcId>2-DTA1BJD</ns:Process_spcInstance_spcId>
+	<ns:RealtimePubSub>false</ns:RealtimePubSub>
+	<ns:Siebel_spcOperation_spcObject_spcId />
+	<ListOfSwiOrganizationB2BOutIOV5 xmlns="http://www.siebel.com/xml/SwiOrganizationB2BOutIOV5">
+		<Account>
+			<Id>1-A367-2235</Id>
+			<RowId>1-A367-2235</RowId>
+			<PartyTypeCode>Organization</PartyTypeCode>
+			<PartyUId>107851</PartyUId>
+			<LastUpdateSDQ>06/02/2016 01:21:05</LastUpdateSDQ>
+			<UpdatedBy>1-DJ7C1O</UpdatedBy>
+			<Updated>06/02/2016 01:21:05</Updated>
+			<Location>SC686349325</Location>
+			<IntegrationId>108277472</IntegrationId>
+			<Name>SWIRE TRAVEL ( HK ) ( LDR Contract &amp; Ad-hoc Grp )</Name>
+			<ACCORB2BLegalName>SWIRE TRAVEL LTD</ACCORB2BLegalName>
+			<AccountStatus>2</AccountStatus>
+			<ACCORB2BSFAAccountStatus>CLIENT</ACCORB2BSFAAccountStatus>
+			<Status />
+			<Type>SC</Type>
+			<ACCORB2BCreatedDate>09/22/2005 10:00:00</ACCORB2BCreatedDate>
+			<AccountCreatedBy>APP_WS_50</AccountCreatedBy>
+			<ACCORB2BCreatedByLogin>KMARSH</ACCORB2BCreatedByLogin>
+			<ACCORB2BUpdated>06/02/2016 09:21:02</ACCORB2BUpdated>
+			<AccountUpdatedBy>APP_WS_51</AccountUpdatedBy>
+			<ACCORB2BUpdatedBy>LICHAN</ACCORB2BUpdatedBy>
+			<ACCORB2BClientType>COMP</ACCORB2BClientType>
+			<ACCORB2BPhonePrefix>852</ACCORB2BPhonePrefix>
+			<MainPhoneNumber>2579 6625</MainPhoneNumber>
+			<ACCORB2BFaxPrefix>852</ACCORB2BFaxPrefix>
+			<MainFaxNumber>852 2590 0011</MainFaxNumber>
+			<HomePage>www.swiretravel.com</HomePage>
+			<ACCORB2BEmail>alextsui@swiretravel.com</ACCORB2BEmail>
+			<ACCORB2BAccountResponsableLogin>YVWONG</ACCORB2BAccountResponsableLogin>
+			<ACCORB2BResponsableNom>WONG</ACCORB2BResponsableNom>
+			<ACCORB2BResponsablePrenom>Yvonne</ACCORB2BResponsablePrenom>
+			<ParentAccountIntegrationId />
+			<ACCORB2BParentAccountResponsableLogin />
+			<ACCORB2BMasterAccountIntegrationId>108277472</ACCORB2BMasterAccountIntegrationId>
+			<ACCORB2BBusinessType>0</ACCORB2BBusinessType>
+			<ACCORB2BKeyAccountClassification>11</ACCORB2BKeyAccountClassification>
+			<ACCORB2BInactiveFlag>N</ACCORB2BInactiveFlag>
+			<ACCORB2BSystematicTracking>N</ACCORB2BSystematicTracking>
+			<DUNSNumber>686349325</DUNSNumber>
+			<ACCORB2BCapital />
+			<ACCORB2BCASociete>1035700000</ACCORB2BCASociete>
+			<ACCORB2BBusinessLine>WHOLESALER</ACCORB2BBusinessLine>
+			<ACCORB2BBusinessSector>73</ACCORB2BBusinessSector>
+			<ACCORB2BMainAccorDivision>LEISURE</ACCORB2BMainAccorDivision>
+			<ACCORB2BRegistrationNumber />
+			<ACCORB2BTypeSociete>corporation</ACCORB2BTypeSociete>
+			<Description />
+			<ACCORDescription2 />
+			<ACCORDescription3 />
+			<ACCORB2BCreditManagement>gdm.credit.management@accor.com</ACCORB2BCreditManagement>
+			<ACCORB2BLastUpdatedGrappe>06/02/2016 01:21:05</ACCORB2BLastUpdatedGrappe>
+			<ACCORB2BLastUpdatedGrappeSystemId>51</ACCORB2BLastUpdatedGrappeSystemId>
+			<ACCORContratNumber />
+			<ACCORDNBDevise />
+			<ACCORDNBNationalID />
+			<ACCORDNBIDType />
+			<ACCORDNBOutBusiness />
+			<ACCORDNBTotalEmployees />
+			<ACCORB2BAccountCategory>SC</ACCORB2BAccountCategory>
+			<ACCORB2BBookingCodeSource />
+			<ACCORB2BBookingCode />
+			<ACCORB2BRecordType>Intermediary</ACCORB2BRecordType>
+			<ACCORB2BNetPriceRemunerationFlag />
+			<ACCORB2BReservationMode />
+			<ACCORB2BTerritoryCode>HKB</ACCORB2BTerritoryCode>
+			<ACCORB2BAgencyUpdated />
+			<ACCORB2BAgencyCreated />
+			<ACCORB2BAccountStatus>0</ACCORB2BAccountStatus>
+			<ACCORB2BHomeAgencyCode />
+			<ACCORB2BPreviousAgencyCode />
+			<ACCORB2BTransactionCode />
+			<ACCORB2BToBeDeleted>N</ACCORB2BToBeDeleted>
+			<ACCORB2BDeletionReason>N/A</ACCORB2BDeletionReason>
+			<ACCORB2BNetworkId />
+			<ACCORB2BNetworkTARSCode />
+			<ACCORB2BNetworkName />
+			<ACCORB2BExternalAgencyCode />
+			<ACCORB2BSuspiciousAgencyStatus />
+			<ACCORB2BConsortiumName />
+			<ACCORB2BSuspiciousAgencyComments />
+			<ACCORB2BSuspiciousAgencyStatusLastUpdate />
+			<ACCORB2BNoshowPercentage />
+			<ACCORB2BCancelledRevenue />
+			<ACCORB2BTARSTransferred>Y</ACCORB2BTARSTransferred>
+			<ACCORB2BAccessCode1>SW364HK668</ACCORB2BAccessCode1>
+			<ACCORB2BAccessCode2 />
+			<ACCORB2BExpirationDate />
+			<ACCORB2BSubsidiaryAccountClassification />
+			<ACCORB2BIndividualGenericAccount />
+			<ACCORB2BLeadSource>Email</ACCORB2BLeadSource>
+			<ACCORB2BCreatedByDelphi />
+			<ACCORB2BUpdatedByDelphi />
+			<ListOfCifAccountReference>
+				<CifAccountReference>
+					<ExternalId1>134959</ExternalId1>
+					<SystemNumber>50</SystemNumber>
+				</CifAccountReference>
+				<CifAccountReference>
+					<ExternalId1>001b0000005JZ0oAAG</ExternalId1>
+					<SystemNumber>51</SystemNumber>
+				</CifAccountReference>
+				<CifAccountReference>
+					<ExternalId1>1-A367-2235</ExternalId1>
+					<SystemNumber>51</SystemNumber>
+				</CifAccountReference>
+			</ListOfCifAccountReference>
+			<ListOfDnbAccount>
+				<DnbAccount>
+					<DUNSNumber3>686349325</DUNSNumber3>
+					<ParentHQDUNS3 />
+					<DomesticUltimateDUNS2 />
+					<GlobalUltimateDUNS3>210287371</GlobalUltimateDUNS3>
+					<ACCORB2BRequestDate />
+					<ACCORB2BRiskBand />
+					<ACCORB2BOriginalLimit />
+					<ACCORB2BOriginalDecision />
+					<ACCORB2BComments />
+					<EmployeeTotal>350</EmployeeTotal>
+					<ACCORB2BIDType />
+					<NationalIdentificationNumber2 />
+					<SICCode>4724</SICCode>
+					<ACCORB2BDNBUpdateStatus />
+					<ACCORB2BAccountDUNSNumber>686349325</ACCORB2BAccountDUNSNumber>
+					<BusinessName>686349325</BusinessName>
+					<AnnualSalesLocalCurrency />
+					<ACCORB2BDevise />
+					<ACCORB2BOutOfBusiness>NA</ACCORB2BOutOfBusiness>
+					<EmployeeHere2 />
+					<MailAddress />
+					<MailCity />
+					<MailState />
+					<MailZip />
+					<ACCORMailingCountry />
+					<ACCORRegisteredAddInd />
+					<CableTelexNumber />
+					<ACCORCEOFullName />
+					<ACCORCEOTitle />
+					<PrimaryLocalActivityCode />
+					<ACCORActivityIndicator />
+					<YearStarted1 />
+					<AnnualSalesLocalCurrencyCD />
+					<ACCORAnnualSalesUS />
+					<EmployeeHereCode />
+					<EmployeeTotalCode />
+					<ACCORIncludePrinciples />
+					<ImportExportCode />
+					<LegalStatus2 />
+					<SiteStatus />
+					<SubsidiaryIndicator />
+					<ACCORPreviousDUNSNumber />
+					<ACCORReportDate />
+					<NumberofFamilyMembers />
+					<DiasCode />
+					<HierarchyCode />
+					<FamilyUpdateDate />
+					<ACCORMarketableIndicator />
+					<ACCORDNBSIC2 />
+					<ACCORDNBSIC3 />
+					<ACCORDNBSIC4 />
+					<ACCORDNBSIC5 />
+					<ACCORDNBSIC6 />
+					<ACCORB2BOriginalLimitCurrency>HKD</ACCORB2BOriginalLimitCurrency>
+					<ListOfDnbSic>
+						<DnbSic>
+							<Description>Travel agency</Description>
+							<SICTechField>4724</SICTechField>
+							<SIC>4724</SIC>
+							<DUNSNumber>686349325</DUNSNumber>
+						</DnbSic>
+					</ListOfDnbSic>
+				</DnbAccount>
+			</ListOfDnbAccount>
+			<ListOfAccorSegment />
+			<ListOfAccount_BusinessAddress>
+				<Account_BusinessAddress IsPrimaryMVG="Y">
+					<AddressId>1-3OFZN12</AddressId>
+					<AddressIntegrationId>341141842</AddressIntegrationId>
+					<BillAddressFlag>N</BillAddressFlag>
+					<AddressName>1-3OFZN12</AddressName>
+					<StreetAddress>6/F CAMBRIDGE HOUSE</StreetAddress>
+					<StreetAddress2>TAIKOO PLACE</StreetAddress2>
+					<ApartmentNumber>979 KINGS RD QUARRY BAY</ApartmentNumber>
+					<ACCORAddressLine4 />
+					<City>HONG KONG</City>
+					<PostalCode>HK</PostalCode>
+					<Country>HK</Country>
+					<State />
+					<ACCORNPAIFlag>N</ACCORNPAIFlag>
+					<ACCORNPAIDate />
+					<ACCOROptOutFlag>N</ACCOROptOutFlag>
+					<ACCOROptOutDate />
+					<AddressCleanseVerifiedFlag>N</AddressCleanseVerifiedFlag>
+					<AddressCleanseVerifiedStatus />
+					<ACCORAddressType>3</ACCORAddressType>
+					<ListOfACCORAccountAddressUsageType>
+						<ACCORAccountAddressUsageType IsPrimaryMVG="N">
+							<ACCORAccountAddressUsage>Postal</ACCORAccountAddressUsage>
+						</ACCORAccountAddressUsageType>
+					</ListOfACCORAccountAddressUsageType>
+				</Account_BusinessAddress>
+				<Account_BusinessAddress IsPrimaryMVG="N">
+					<AddressId>1-3OFZN7B</AddressId>
+					<AddressIntegrationId>341141848</AddressIntegrationId>
+					<BillAddressFlag>Y</BillAddressFlag>
+					<AddressName>1-3OFZN7B</AddressName>
+					<StreetAddress>6/F CAMBRIDGE HOUSE</StreetAddress>
+					<StreetAddress2>TAIKOO PLACE</StreetAddress2>
+					<ApartmentNumber>979 KINGS RD QUARRY BAY</ApartmentNumber>
+					<ACCORAddressLine4 />
+					<City>HONG KONG</City>
+					<PostalCode>HK</PostalCode>
+					<Country>HK</Country>
+					<State />
+					<ACCORNPAIFlag>N</ACCORNPAIFlag>
+					<ACCORNPAIDate />
+					<ACCOROptOutFlag>N</ACCOROptOutFlag>
+					<ACCOROptOutDate />
+					<AddressCleanseVerifiedFlag>N</AddressCleanseVerifiedFlag>
+					<AddressCleanseVerifiedStatus />
+					<ACCORAddressType>3</ACCORAddressType>
+					<ListOfACCORAccountAddressUsageType>
+						<ACCORAccountAddressUsageType IsPrimaryMVG="N">
+							<ACCORAccountAddressUsage>Billing</ACCORAccountAddressUsage>
+						</ACCORAccountAddressUsageType>
+					</ListOfACCORAccountAddressUsageType>
+				</Account_BusinessAddress>
+			</ListOfAccount_BusinessAddress>
+			<ListOfAccorAccountSegment>
+				<AccorAccountSegment>
+					<Name>EUR</Name>
+					<Type2>18</Type2>
+				</AccorAccountSegment>
+			</ListOfAccorAccountSegment>
+			<ListOfAccorDistribution />
+			<ListOfAccorB2bAccountResaHabitsDistribMode />
+			<ListOfAccorB2bAccountResaHabitsResaMode />
+			<ListOfAccorB2bAccountCi />
+		</Account>
+	</ListOfSwiOrganizationB2BOutIOV5>
+</ns:updateOrganizationB2BV5_Output>

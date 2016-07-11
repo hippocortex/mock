@@ -36,7 +36,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ListOfSwiOrganizationB2BIO {
 
-    @XmlElement(name = "Account", required = true)
+    @XmlElement(name = "Account",  required = true)
     protected List<Account> account;
     @XmlAttribute(name = "ExternalSystemId")
     protected String externalSystemId;
